@@ -1,0 +1,19 @@
+# Compiled Object files
+*.o
+*.obj
+*.class
+
+# Compiled Dynamic libraries
+*.so
+*.dll
+
+# Modules
+*.mo
+
+# Compiled Static libraries
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
