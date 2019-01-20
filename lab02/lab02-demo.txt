@@ -1,0 +1,15 @@
+# Process #
+# solve the following problems by demonstrating in Ubuntu
+
+# 1. Practice Exercises 
+
+## 3.1 Page 149, textbook, 9e
+code is in Figure 3.30, which can be downloaded from https://github.com/greggagne/OSC9e/tree/master/ch3
+Figure 3.30 fork-question-1.c
+
+## 3.2 Page 149, textbook, 9e
+code is in Figure 3.31, which can be downloaded from https://github.com/greggagne/OSC9e/tree/master/ch3
+Figure 3.31 fork-question-2.c
+
+## 3.17 Page 153, textbook, 9e
+code is in Figure 3.35
