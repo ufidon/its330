@@ -32,6 +32,7 @@
 * [The .NET Programmer’s Playground](https://www.linqpad.net/)
 * [CSharp REPL](https://www.mono-project.com/docs/tools+libraries/tools/repl/)
 * [Mono Documentation](https://www.mono-project.com/docs/)
+* [OpenJDK](https://openjdk.java.net/)
 * [JDK 11 Documentation](https://docs.oracle.com/en/java/javase/11/index.html)
 
 # 机器人
@@ -54,9 +55,10 @@
 * [Operating System Tutorial](https://www.tutorialspoint.com/operating_system/index.htm)
 
 # 虚拟机
-* [Enabling shared folders with open-vm-tools](https://askubuntu.com/questions/580319/enabling-shared-folders-with-open-vm-tools)
+* [RENODE](https://renode.io/)
 
 # 杂记
+* [Enabling shared folders with open-vm-tools](https://askubuntu.com/questions/580319/enabling-shared-folders-with-open-vm-tools)
 * [Technique to find shared memory names currently used](https://stackoverflow.com/questions/25747935/technique-to-find-shared-memory-names-currently-used)
 * [How to view threads of a process on Linux](http://ask.xmodulo.com/view-threads-process-linux.html)
 * [Physical and Virtual Memory in Windows 10](https://answers.microsoft.com/en-us/windows/forum/windows_10-performance-winpc/physical-and-virtual-memory-in-windows-10/e36fb5bc-9ac8-49af-951c-e7d39b979938)
