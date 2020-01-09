@@ -3,19 +3,19 @@ Course materials and demos for labs
 
 
 ## Lab01: Setup lab environment
-** Tasks **
+**Tasks**
 
-1. Description
+_Description_
 ```c
 In this lab, you are required to setup two virtual machines and put them in a NAT network of VirtualBox:
 Windows server and Ubuntu.
 ```
 
-2. Steps
+_Steps_
 
-    1. Create VMS, NAT network, download ISOs and softwares
-    2. Setup Windows server, chrome browser, visual studio, windows SDK
-    3. Setup Ubuntu & software
+1. Create VMS, NAT network, download ISOs and softwares
+2. Setup Windows server, chrome browser, visual studio, windows SDK
+3. Setup Ubuntu & software
 
 ```bash
 # Inside Ubuntu, open a terminal, run the following commands
@@ -28,9 +28,9 @@ echo "deb https://download.mono-project.com/repo/ubuntu vs-bionic main"  | sudo 
 sudo apt update
 sudo apt-get install monodevelop openjdk-11-jdk
 ```
-    4. download and compile the source code files
+4. download and compile the source code files
 
-* _Where are the OSes and tools?_
+**Where are the OSes and tools?**
   * [VirtualBox 6](https://www.virtualbox.org/)
   * [Ubuntu 18.04LTS](https://ubuntu-mate.org/)
   * [Windows server](https://www.microsoft.com/en-us/cloud-platform/windows-server)
