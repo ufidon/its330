@@ -3,14 +3,16 @@ Course materials and demos for labs
 
 
 ## Lab01: Setup lab environment
-* Tasks
-  1. Description
+** Tasks **
+
+1. Description
 ```c
 In this lab, you are required to setup two virtual machines and put them in a NAT network of VirtualBox:
 Windows server and Ubuntu.
 ```
 
-  2. Steps
+2. Steps
+
     1. Create VMS, NAT network, download ISOs and softwares
     2. Setup Windows server, chrome browser, visual studio, windows SDK
     3. Setup Ubuntu & software
