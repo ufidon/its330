@@ -7,7 +7,7 @@ Course materials and demos for labs
 
 _Description_
 ```c
-In this lab, you are required to setup two virtual machines and put them in a NAT network of VirtualBox:
+In this lab,  setup two virtual machines and put them in a NAT network of VirtualBox:
 Windows server and Ubuntu.
 ```
 
@@ -30,7 +30,7 @@ sudo apt-get install monodevelop openjdk-11-jdk
 ```
 4. download and compile the source code files
 
-**Where are the OSes and tools?**
+**Where are the OSes and tools?** **
   * [VirtualBox 6](https://www.virtualbox.org/)
   * [Ubuntu 18.04LTS](https://ubuntu-mate.org/)
   * [Windows server](https://www.microsoft.com/en-us/cloud-platform/windows-server)
