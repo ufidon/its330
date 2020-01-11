@@ -62,6 +62,9 @@ _2. Coursera_
 * [Tools and References for the MBR and OS Boot Records](https://thestarman.pcministry.com/asm/mbr/BootToolsRefs.htm)
 * [MBRWizard](http://mbrwizard.com/)
 
+## OS design & implementation
+* [https://wiki.osdev.org](OS Dev)
+
 ## Reference courses
 * [Operating Systems by Dr. Hussein M. Abdel-Wahab](https://www.cs.odu.edu/~cs471w/)
 
