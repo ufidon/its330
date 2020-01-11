@@ -34,6 +34,7 @@ _5. Operating Systems: Internals and Design Principles_
 * [Develop Windows desktop applications](https://docs.microsoft.com/en-us/windows/desktop/index)
 * [Windows Process Scheduling Priorities](https://docs.microsoft.com/en-us/windows/desktop/procthread/scheduling-priorities)
 * [.NET Documentation](https://docs.microsoft.com/en-us/dotnet/)
+* [.NET Guide](https://docs.microsoft.com/en-us/dotnet/standard/?view=netframework-4.8)
 * [C# 7.0 in a Nutshell](http://www.albahari.com/nutshell/)
 * [C# Nutshell & Pocket Reference](http://www.albahari.com/)
 * [Threading in C#](http://www.albahari.com/threading/)
