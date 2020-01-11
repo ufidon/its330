@@ -63,7 +63,7 @@ _2. Coursera_
 * [MBRWizard](http://mbrwizard.com/)
 
 ## OS design & implementation
-* [https://wiki.osdev.org](OS Dev)
+* [OS Dev](https://wiki.osdev.org)
 
 ## Reference courses
 * [Operating Systems by Dr. Hussein M. Abdel-Wahab](https://www.cs.odu.edu/~cs471w/)
