@@ -10,6 +10,7 @@ Course materials and demos for lectures
     * [Metric prefix](https://en.wikipedia.org/wiki/Metric\_prefix)
     * [Binary prefix](https://en.wikipedia.org/wiki/Binary\_prefix)
     * [Computer Storage Units Conversion Calculator](https://www.calculatorsoup.com/calculators/conversions/computerstorage.php)
+    * [Unit Converters](https://www.unitconverters.net/)
   * _Electric bus metrics_
     * [Bus (computing)](https://en.wikipedia.org/wiki/Bus\_\(computing\))
     * [List of interface bit rates](https://en.wikipedia.org/wiki/List\_of\_interface\_bit\_rates)
