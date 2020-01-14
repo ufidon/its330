@@ -55,9 +55,9 @@ Course materials and demos for lectures
 ### File system implementation
 
 
-## I/O system
+## Module05: I/O system
 
-## Protection & security
+## Module06: Protection & security
 
 ## References
 * [How to write a computer operating system in C/C++ from scratch?](https://samypesse.gitbook.io/how-to-create-an-operating-system/)
