@@ -44,6 +44,7 @@ sudo apt-get install monodevelop openjdk-11-jdk
   * [Install Windows Server 2019 in VirtualBox 6](https://youtu.be/fQZFoSTSuPM)
   * [Create SEED Ubuntu 16.04 virtual machines and NAT network](https://youtu.be/pwSlVJSCpu0)
   * [How to run VirtualBox virtual machines on other computers with VirtualBox?](https://youtu.be/Ps30RJ1MzgQ)
+  * [Compile C/C# code on Windows Server 2019 and Ubuntu 18.04LTS](https://youtu.be/ajTLkAqamKs)
 
 
 
