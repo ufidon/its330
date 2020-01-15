@@ -69,6 +69,7 @@ Course materials and demos for lectures
   * [Parallel Processing, Concurrency, and Async Programming in .NET](https://docs.microsoft.com/en-us/dotnet/standard/parallel-processing-and-concurrency)
   * [Windows Processes and Threads](https://docs.microsoft.com/en-us/windows/win32/procthread/processes-and-threads)
   * [System\.Diagnostics Namespace](https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics?view=netframework-4\.8)
+  * [C# Process Class](https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.process?view=netframework-4.8)
   * [Unix Multi-Process Programming and Inter-Process Communications (IPC)](http://pelusa.fis.cinvestav.mx/tmatos/LaSumA/LaSumA2_archivos/Paralelizacion/Unix%20Multi-Process%20Programming%20and%20Inter-Process%20Communications%20\(IPC\)\.htm)
 
 * _Video_
