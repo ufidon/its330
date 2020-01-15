@@ -69,6 +69,7 @@ _2. Coursera_
 
 ## Reference courses
 * [Operating Systems by Dr. Hussein M. Abdel-Wahab](https://www.cs.odu.edu/~cs471w/)
+* [OPERATING SYSTEMS by Dr. Junfeng Yang](https://www.cs.columbia.edu/~junfeng/10sp-w4118/)
 
 ## Misc
 * [Technique to find shared memory names currently used](https://stackoverflow.com/questions/25747935/technique-to-find-shared-memory-names-currently-used)
