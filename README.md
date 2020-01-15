@@ -65,6 +65,8 @@ _2. Coursera_
 * [Ext2Read](https://sourceforge.net/projects/ext2read/)
 * [Tools and References for the MBR and OS Boot Records](https://thestarman.pcministry.com/asm/mbr/BootToolsRefs.htm)
 * [MBRWizard](http://mbrwizard.com/)
+* [BPF Compiler Collection](https://github.com/iovisor/bcc)
+
 
 ## OS design & implementation
 * [OS Dev](https://wiki.osdev.org)
