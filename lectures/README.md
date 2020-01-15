@@ -64,6 +64,13 @@ Course materials and demos for lectures
   * [20 Command Line Tools to Monitor Linux Performance](https://www.tecmint.com/command-line-tools-to-monitor-linux-performance/)
   * [30 Linux System Monitoring Tools Every SysAdmin Should Know](https://www.cyberciti.biz/tips/top-linux-monitoring-tools.html)
 
+* _Programming_
+  * [Linux Multi-process Programming](http://faculty.salina.k-state.edu/tim/CMST302/study_guide/topic8/multi.html)
+  * [Parallel Processing, Concurrency, and Async Programming in .NET](https://docs.microsoft.com/en-us/dotnet/standard/parallel-processing-and-concurrency)
+  * [Windows Processes and Threads](https://docs.microsoft.com/en-us/windows/win32/procthread/processes-and-threads)
+  * [System\.Diagnostics Namespace](https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics?view=netframework-4\.8)
+  * [Unix Multi-Process Programming and Inter-Process Communications (IPC)](http://pelusa.fis.cinvestav.mx/tmatos/LaSumA/LaSumA2_archivos/Paralelizacion/Unix%20Multi-Process%20Programming%20and%20Inter-Process%20Communications%20\(IPC\)\.htm)
+
 * _Video_
 
 
@@ -103,8 +110,7 @@ Course materials and demos for lectures
   * [Pipeline](https://en.wikipedia.org/wiki/Pipeline\_\(Unix\))
   * [Signal](https://en.wikipedia.org/wiki/Signal\_\(IPC\))
   * [Semaphore](https://en.wikipedia.org/wiki/Semaphore\_\programming\))
-  * [Remote procedure call
-](https://en.wikipedia.org/wiki/Remote\_procedure\_call)
+  * [Remote procedure call](https://en.wikipedia.org/wiki/Remote\_procedure\_call)
 
 
 * _Popular operating systems_
@@ -136,11 +142,21 @@ Course materials and demos for lectures
   * [Thread](https://en.wikipedia.org/wiki/Thread\_\(computing\))
   * [Thread control block](https://en.wikipedia.org/wiki/Thread\_control\_block)
   * [Fiber](https://en.wikipedia.org/wiki/Fiber\_\(computer\_science\))
+  * [Light Weight Kernel Threads](https://en.wikipedia.org/wiki/Light\_Weight\_Kernel\_Threads)
+  * [Thread pool](https://en.wikipedia.org/wiki/Thread\_pool)
+  * [Light-weight process](https://en.wikipedia.org/wiki/Light-weight\_process)
 
 * _Popular operating systems_
+  * [POSIX Threads](https://en.wikipedia.org/wiki/POSIX\_Threads)
+  * [POSIX Threads Programming](https://computing.llnl.gov/tutorials/pthreads/)
+  * [Windows Processes and Threads](https://docs.microsoft.com/en-us/windows/win32/procthread/processes-and-threads)
 
 * _Examples_
-
+  * [Threading in C#](http://www.albahari.com/threading/)
+  * [C# Managed Threading](https://docs.microsoft.com/en-us/dotnet/standard/threading/?view=netframework-4.8)
+  * [The managed thread pool in C#](https://docs.microsoft.com/en-us/dotnet/standard/threading/the-managed-thread-pool)
+  * [Java thread](https://docs.oracle.com/javase/tutorial/essential/concurrency/index.html)
+  * [Java Concurrency and Multithreading Tutorial](http://tutorials.jenkov.com/java-concurrency/index.html)
 
 * _Video_
 
@@ -149,11 +165,18 @@ Course materials and demos for lectures
   * [Parallel computing](https://en.wikipedia.org/wiki/Parallel_computing)
   * [Amdahl's law](https://en.wikipedia.org/wiki/Amdahl%27s\_law)
   * [Multi-core processor](https://en.wikipedia.org/wiki/Multi-core\_processor)
+  * [Hyper-threading](https://en.wikipedia.org/wiki/Hyper-threading)
+  * [OpenMP](https://en.wikipedia.org/wiki/OpenMP)
+
 
 * _Popular operating systems_
 
-* _Examples_
 
+
+* _Examples_
+  * [OpenMP](https://en.wikipedia.org/wiki/OpenMP)
+  * [Threading Building Blocks](https://en.wikipedia.org/wiki/Threading\_Building\_Blocks)
+  * [Java Concurrency and Multithreading Tutorial](http://tutorials.jenkov.com/java-concurrency/index.html)
 
 * _Video_
 

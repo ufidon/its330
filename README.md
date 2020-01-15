@@ -30,6 +30,8 @@ _5. Operating Systems: Internals and Design Principles_
 
 ## System programming
 * [The Linux Programming Interface](http://man7.org/index.html)
+* [Linux Core API Documentation](https://www.kernel.org/doc/html/v4.12/core-api/index.html)
+* [The Linux Kernel API](https://www.kernel.org/doc/htmldocs/kernel-api/)
 * [Windows documentation](https://docs.microsoft.com/en-us/windows/)
 * [Develop Windows desktop applications](https://docs.microsoft.com/en-us/windows/desktop/index)
 * [Windows Process Scheduling Priorities](https://docs.microsoft.com/en-us/windows/desktop/procthread/scheduling-priorities)
