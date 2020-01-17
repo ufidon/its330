@@ -13,8 +13,8 @@ In this lab,  create processes in Windows server and Ubuntu.
 _Steps_
 
 
-1. Download and compile the source code files from [osc10e ch3](https://github.com/greggagne/osc10e/tree/master/ch3)
-2. Solve any compilation errors and explain the programs
+1. Use [Linux process API](http://faculty.salina.k-state.edu/tim/CMST302/study_guide/topic8/multi.html) to create processes
+2. Use [Windows API](https://docs.microsoft.com/en-us/windows/win32/procthread/processes-and-threads) to create processes
 3. Create processes using [C# Process class](https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.process?view=netframework-4.8)
 4. (_Optional_) Create processes using [Java.lang.Process calss](https://www.geeksforgeeks.org/java-lang-process-class-java/)
 
