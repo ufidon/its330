@@ -1,7 +1,10 @@
-# Process #
+# Create child process #
 
-# 1. Create processes in Ubuntu
+# 1. Create at least two child processes in Ubuntu using Linux API, use GUI programs other than demoed.
 
 
-# 2. Create processes in Windows Server 
+# 2. Create at least two child processes in Windows Server using Windows API, use GUI programs other than demoed. 
+
+
+# 3. Create at least two child processes in Windows Server using C#, use GUI programs other than demoed.
 

@@ -3,14 +3,14 @@ Course materials and demos for labs
 
 
 ## Lab02: Create processes
-**Tasks**
+
 
 _Description_
 ```c
 In this lab,  create processes in Windows server and Ubuntu.
 ```
 
-_Steps_
+_Tasks_
 
 
 1. Use [Linux process API](http://faculty.salina.k-state.edu/tim/CMST302/study_guide/topic8/multi.html) to create processes
