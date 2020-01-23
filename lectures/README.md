@@ -72,6 +72,12 @@ Course materials and demos for lectures
   * [C# Process Class](https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.process?view=netframework-4.8)
   * [Unix Multi-Process Programming and Inter-Process Communications (IPC)](http://pelusa.fis.cinvestav.mx/tmatos/LaSumA/LaSumA2_archivos/Paralelizacion/Unix%20Multi-Process%20Programming%20and%20Inter-Process%20Communications%20\(IPC\)\.htm)
 
+* _Tools_
+  * [Debugger](https://en.wikipedia.org/wiki/Debugger)
+  * [x64dbg](https://x64dbg.com/)
+  * [edb-debugger](https://github.com/eteran/edb-debugger)
+  * [NikPEViewer 0.4v](http://www.codedebug.com/php/Products/Products\_NikPEViewer\_12v.php)
+
 * _Video_
   * [windows process layout in memory static analysis with PE viewer](https://youtu.be/CnEPBEGau40)
   * [create processes using windows API](https://youtu.be/hBQdr5bnQfc)
