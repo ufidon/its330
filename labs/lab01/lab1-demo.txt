@@ -1,12 +1,12 @@
 # 1. Show the NAT network is working
-	# On the Windows host, find the ip configuration of Ethernet adapter VMware Network Adapter VMnet8:
+	# On the Windows host, find the ip configuration of Ethernet adapter VMware Network Adapter VMnet8(only for VMware):
 	ipconfig /all
 	
-	# On the Windows 10 VM, find its ip configuration of the Ethernet adapter connected to the NAT:
+	# On the Windows  VM, find its ip configuration of the Ethernet adapter connected to the NAT:
 	ipconfig /all
 
 	
-	# On the Ubuntu Linux VM (SEED Ubuntu 16.04 or Ubuntu 18.04.1 LTS), find its ip configuration of the Ethernet adapter connected to the NAT: 
+	# On the Ubuntu Linux VM, find its ip configuration of the Ethernet adapter connected to the NAT: 
 	ifconfig -a
 	
 	# from one VM ping all other VMs (including the host)
