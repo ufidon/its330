@@ -24,18 +24,32 @@ _References_
   * [pthreads - POSIX threads](http://man7.org/linux/man-pages/man7/pthreads.7.html)
   * [POSIX thread (pthread) libraries](https://www.cs.cmu.edu/afs/cs/academic/class/15492-f07/www/pthreads.html)
   * [POSIX Threads Programming](https://computing.llnl.gov/tutorials/pthreads/)
+  * [Multithreaded Programming (POSIX pthreads Tutorial)](https://randu.org/tutorials/threads/)
+  * [Linux signals](https://www.win.tue.nl/~aeb/linux/lk/lk-5.html)
+  * [TLS performance overhead and cost on GNU/Linux](http://david-grs.github.io/tls_performance_overhead_cost_linux/)
 * Windows
   * [About Processes and Threads](https://docs.microsoft.com/en-us/windows/win32/procthread/about-processes-and-threads)
   * [Creating Threads](https://docs.microsoft.com/en-us/windows/win32/procthread/creating-threads)
   * [processthreadsapi.h header](https://docs.microsoft.com/en-us/windows/win32/api/processthreadsapi/)
+  * [Thread Pools](https://docs.microsoft.com/en-us/windows/win32/procthread/thread-pools)
+  * [Using the Thread Pool Functions](https://docs.microsoft.com/en-us/windows/win32/procthread/using-the-thread-pool-functions)
+  * [Thread Local Storage](https://docs.microsoft.com/en-us/windows/win32/procthread/thread-local-storage)
 * C#
   * [Using threads and threading](https://docs.microsoft.com/en-us/dotnet/standard/threading/using-threads-and-threading)
   * [Thread Class](https://docs.microsoft.com/en-us/dotnet/api/system.threading.thread?view=netframework-4.8)
   * [Threading in C#](http://www.albahari.com/threading/)
+  * [The managed thread pool](https://docs.microsoft.com/en-us/dotnet/standard/threading/the-managed-thread-pool)
+  * [Thread Local Storage: Thread-Relative Static Fields and Data Slots](https://docs.microsoft.com/en-us/dotnet/standard/threading/thread-local-storage-thread-relative-static-fields-and-data-slots)
 * Java
   * [Java threads](https://docs.oracle.com/javase/tutorial/essential/concurrency/threads.html)
   * [How to create thread](https://www.javatpoint.com/creating-thread)
   * [Creating and Starting Java Threads](http://tutorials.jenkov.com/java-concurrency/creating-and-starting-threads.html)
+  * [Thread Pools](https://docs.oracle.com/javase/tutorial/essential/concurrency/pools.html)
+  * [Java ThreadLocal](http://tutorials.jenkov.com/java-concurrency/threadlocal.html)
+
+* OpenMP
+  * [OpenMP](https://www.openmp.org/)
+
 
 **Where are the codes and tools?** 
 * [Windows Sysinternals](https://docs.microsoft.com/en-us/sysinternals/)
