@@ -81,6 +81,9 @@ Course materials and demos for lectures
 * _Video_
   * [windows process layout in memory static analysis with PE viewer](https://youtu.be/CnEPBEGau40)
   * [create processes using windows API](https://youtu.be/hBQdr5bnQfc)
+  * [parent children relationship between windows processes](https://youtu.be/xf4G962ObAY)
+  * [create child processes using C#](https://youtu.be/i7kf7DAxLL8)
+  * [parent children relationship between Linux processes](https://youtu.be/SGlbhKXSFeQ)
 
 
 

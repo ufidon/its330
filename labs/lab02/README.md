@@ -23,7 +23,10 @@ _Tasks_
 * [BCC - Tools for BPF-based Linux IO analysis, networking, monitoring, and more](https://github.com/iovisor/bcc)
 * [OSC10e](https://github.com/greggagne/osc10e)
 
-**Youtube Videos** 
+**Youtube Videos**
+  * [parent children relationship between windows processes](https://youtu.be/xf4G962ObAY)
+  * [create child processes using C#](https://youtu.be/i7kf7DAxLL8)
+  * [parent children relationship between Linux processes](https://youtu.be/SGlbhKXSFeQ)
 
 
 
