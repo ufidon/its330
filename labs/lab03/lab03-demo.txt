@@ -1,10 +1,10 @@
-# Create child process #
+# Create threads #
 
-# 1. Create at least two child threads in Ubuntu using Linux API, and show the threads.
-
-
-# 2. Create at least two child threads in Windows Server using Windows API, and show the threads. 
+# 1. Create at least two threads in Ubuntu using Linux API, and show the threads.
 
 
-# 3. Create at least two child threads in Windows Server using C#, and show the threads.
+# 2. Create at least two threads in Windows Server using Windows API, and show the threads. 
+
+
+# 3. Create at least two threads in Windows Server using C#, and show the threads.
 
