@@ -51,10 +51,14 @@ _References_
   * [OpenMP](https://www.openmp.org/)
 
 
-**Where are the codes and tools?** 
+**Where are the codes and tools?**
 * [Windows Sysinternals](https://docs.microsoft.com/en-us/sysinternals/)
 * [BCC - Tools for BPF-based Linux IO analysis, networking, monitoring, and more](https://github.com/iovisor/bcc)
 * [OSC10e](https://github.com/greggagne/osc10e)
+* [The program pstree and htop showing threads with unique PIDS. How is this possible?](https://unix.stackexchange.com/questions/166207/the-program-pstree-and-htop-showing-threads-with-unique-pids-how-is-this-possib)
+* [How can I view the active threads of a running program?](https://superuser.com/questions/462969/how-can-i-view-the-active-threads-of-a-running-program)
+* [Understanding Process Explorer](https://www.howtogeek.com/school/sysinternals-pro/lesson2/)
+* [Controlling Processes and Threads in WinDbg](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/processes-and-threads-window)
 
 **Youtube Videos**
 

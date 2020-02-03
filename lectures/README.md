@@ -71,12 +71,16 @@ Course materials and demos for lectures
   * [System\.Diagnostics Namespace](https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics?view=netframework-4\.8)
   * [C# Process Class](https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.process?view=netframework-4.8)
   * [Unix Multi-Process Programming and Inter-Process Communications (IPC)](http://pelusa.fis.cinvestav.mx/tmatos/LaSumA/LaSumA2_archivos/Paralelizacion/Unix%20Multi-Process%20Programming%20and%20Inter-Process%20Communications%20\(IPC\)\.htm)
+  * [Signal Handling in GNU C library](https://www.gnu.org/software/libc/manual/html_node/Signal-Handling.html)
+  * [All about Linux signals](https://www.linuxprogrammingblog.com/all-about-linux-signals?page=1)
+  * [Linux – Handling Signals in a Multithreaded Application](https://devarea.com/linux-handling-signals-in-a-multithreaded-application/)
 
 * _Tools_
   * [Debugger](https://en.wikipedia.org/wiki/Debugger)
   * [x64dbg](https://x64dbg.com/)
   * [edb-debugger](https://github.com/eteran/edb-debugger)
   * [NikPEViewer 0.4v](http://www.codedebug.com/php/Products/Products\_NikPEViewer\_12v.php)
+  * [The program pstree and htop showing threads with unique PIDS. How is this possible?](https://unix.stackexchange.com/questions/166207/the-program-pstree-and-htop-showing-threads-with-unique-pids-how-is-this-possib)
 
 * _Video_
   * [windows process layout in memory static analysis with PE viewer](https://youtu.be/CnEPBEGau40)
