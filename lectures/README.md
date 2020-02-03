@@ -219,7 +219,13 @@ Course materials and demos for lectures
 * _Popular operating systems_
 
 * _Examples_
-  * [Windows Interrupt Service Routines](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/interrupt-service-routines)
+  * _Windows_
+    * [Windows Interrupt Service Routines](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/interrupt-service-routines)
+    * [Keyboard and Mouse Input](https://docs.microsoft.com/en-us/windows/win32/inputdev/user-input)
+    * [C# System.Windows.Input Namespace](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.keyboard?view=netframework-4.8)
+  * Linux
+    * [Linux IO](https://www.kernel.org/doc/Documentation/input/input.txt)
+    * [Accessing Keys from Linux Input Device](https://stackoverflow.com/questions/20943322/accessing-keys-from-linux-input-device)
 
 * _Video_
 
