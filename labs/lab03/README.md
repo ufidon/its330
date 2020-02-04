@@ -61,7 +61,9 @@ _References_
 * [Controlling Processes and Threads in WinDbg](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/processes-and-threads-window)
 
 **Youtube Videos**
-
+  * [Create threads in C# on Windows Server](https://youtu.be/mql8VjnMOME)
+  * [Create threads in Linux API on Ubuntu](https://youtu.be/eG0m2Mb5OY8)
+  * [Create threads in Windows API on Windows Server](https://youtu.be/PIXg_JME5_A)
 
 
 

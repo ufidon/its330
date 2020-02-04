@@ -88,6 +88,9 @@ Course materials and demos for lectures
   * [parent children relationship between windows processes](https://youtu.be/xf4G962ObAY)
   * [create child processes using C#](https://youtu.be/i7kf7DAxLL8)
   * [parent children relationship between Linux processes](https://youtu.be/SGlbhKXSFeQ)
+  * [Create threads in C# on Windows Server](https://youtu.be/mql8VjnMOME)
+  * [Create threads in Linux API on Ubuntu](https://youtu.be/eG0m2Mb5OY8)
+  * [Create threads in Windows API on Windows Server](https://youtu.be/PIXg_JME5_A)
 
 
 
