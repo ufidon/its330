@@ -1,0 +1,10 @@
+# Create threads #
+
+# 1. Create threads in Ubuntu using pthread, get/set thread priority.
+
+
+# 2. Create one thread in Windows Server using Windows API, show its default thread priority, change its priority to a different one then show it again. 
+
+
+# 3. Create a custom task scheduler using C#, and show the threads.
+
