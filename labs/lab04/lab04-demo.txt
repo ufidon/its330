@@ -1,4 +1,4 @@
-# Create threads #
+# thread scheduling #
 
 # 1. Create threads in Ubuntu using pthread, get/set thread priority.
 
