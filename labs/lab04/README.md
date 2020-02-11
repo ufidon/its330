@@ -38,6 +38,7 @@ _References_
 
 
 **Youtube Videos**
+* [scheduling of threads](https://youtu.be/a2eShvUibf8)
 
 
 
