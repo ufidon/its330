@@ -108,7 +108,20 @@ Course materials and demos for lectures
   * [Multilevel queue](https://en.wikipedia.org/wiki/Multilevel\_queue)
 
 * _Popular operating systems_
-
+  * _Linux_
+    * [Linux Scheduler](https://www.kernel.org/doc/html/latest/scheduler/index.html)
+    * [Completely Fair Scheduler](https://en.wikipedia.org/wiki/Completely\_Fair\_Scheduler)
+    * [Brain Fuck Scheduler](https://en.wikipedia.org/wiki/Brain\_Fuck\_Scheduler)
+  * _Windows_
+    * [Task Scheduler](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-task-scheduler)
+    * [Task Scheduler for developers](https://docs.microsoft.com/en-us/windows/win32/taskschd/task-scheduler-start-page)
+  * _C#_
+    * [TaskScheduler Class](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.taskscheduler?view=netframework-4.8)
+    * [Scheduling threads](https://docs.microsoft.com/en-us/dotnet/standard/threading/scheduling-threads)
+  * _Java_
+    * [Processes and Threads](https://docs.oracle.com/javase/tutorial/essential/concurrency/procthread.html)
+  * _C++_
+    * [C++ Thread support library](https://en.cppreference.com/w/cpp/thread)
 * _Examples_
 
 
@@ -132,6 +145,21 @@ Course materials and demos for lectures
 
 
 * _Popular operating systems_
+  * _Linux_
+    * [Interprocess Communication Mechanisms](https://www.tldp.org/LDP/tlk/ipc/ipc.html)
+    * [Linux Interprocess Communications](http://tldp.org/LDP/lpg/node7.html)
+    * [Inter-process communication in Linux: Shared storage](https://opensource.com/article/19/4/interprocess-communication-linux-storage)
+    * [Inter-process communication in Linux: Using pipes and message queues](https://opensource.com/article/19/4/interprocess-communication-linux-channels)
+  * _Windows_
+    * [Interprocess Communications](https://docs.microsoft.com/en-us/windows/win32/ipc/interprocess-communications)
+  * _C#_
+    * [Pipe Operations in .NET](https://docs.microsoft.com/en-us/dotnet/standard/io/pipe-operations)
+  * _Java_
+    * [interprocess communication](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_71/rzaha/interpro.htm)
+    * [Networking Basics](https://docs.oracle.com/javase/tutorial/networking/overview/networking.html)
+  * _C++_
+    * [A list of open source C++ libraries](https://en.cppreference.com/w/cpp/links/libs)
+
 
 * _Examples_
 
@@ -142,18 +170,65 @@ Course materials and demos for lectures
 ### process synchronization
 * _Concepts_
   * [Synchronization](https://en.wikipedia.org/wiki/Synchronization\_\(computer\_science\))
+  * [Concurrency pattern](https://en.wikipedia.org/wiki/Concurrency\_pattern)
   * [Producer–consumer problem](https://en.wikipedia.org/wiki/Producer%E2%80%93consumer\_problem)
   * [Readers–writers problem](https://en.wikipedia.org/wiki/Readers%E2%80%93writers\_problem)
   * [Dining philosophers problem](https://en.wikipedia.org/wiki/Dining\_philosophers\_problem)
 
 * _Popular operating systems_
-
+  * _Linux_
+    * [Anatomy of Linux synchronization methods](https://www.ibm.com/developerworks/library/l-linux-synchronization/index.html)
+    * [POSIX Threads Programming](https://computing.llnl.gov/tutorials/pthreads/)
+    * [Kernel level synchronization](http://students.mimuw.edu.pl/ZSO/Wyklady/06_synchro/6_synchro_en.html)
+    * [Multithreaded Programming](https://randu.org/tutorials/threads/)
+    * [POSIX thread (pthread) libraries](https://www.cs.cmu.edu/afs/cs/academic/class/15492-f07/www/pthreads.html)
+    * [Process Synchronization](https://www.studytonight.com/operating-system/process-synchronization)
+  * _Windows_
+    * [Win32 Synchronization](https://docs.microsoft.com/en-us/windows/win32/sync/synchronization)
+    * [Win32 Synchronizing Execution of Multiple Threads](https://docs.microsoft.com/en-us/windows/win32/procthread/synchronizing-execution-of-multiple-threads)
+    * [Win32 processes and threads: synchronization](https://www.tenouk.com/ModuleV.html)
+  * _C#_
+    * [Overview of synchronization primitives](https://docs.microsoft.com/en-us/dotnet/standard/threading/overview-of-synchronization-primitives)
+    * [Basic synchronization](http://www.albahari.com/threading/part2.aspx)
+  * _Java_
+    * [Synchronization](https://docs.oracle.com/javase/tutorial/essential/concurrency/sync.html)
+    * [Synchronization in Java](https://www.javatpoint.com/synchronization-in-java)
+  * _C++_
+    * [C++ Thread support library](https://en.cppreference.com/w/cpp/thread)
 * _Examples_
 
 
 * _Video_
 
 ### Deadlocks
+* _Concepts_
+  * [Deadlock](https://en.wikipedia.org/wiki/Deadlock)
+  * [Concurrent computing](https://en.wikipedia.org/wiki/Concurrent\_computing)
+  * [Dining philosophers problem](https://en.wikipedia.org/wiki/Dining\_philosophers\_problem)
+  * [Producer–consumer problem](https://en.wikipedia.org/wiki/Producer%E2%80%93consumer\_problem)
+  * [Readers–writers problem](https://en.wikipedia.org/wiki/Readers%E2%80%93writers\_problem)
+  * [Sleeping barber problem](https://en.wikipedia.org/wiki/Sleeping\_barber\_problem)
+  * [Race condition](https://en.wikipedia.org/wiki/Race\_condition)
+  * [ABA problem](https://en.wikipedia.org/wiki/ABA\_problem)
+  * [Cigarette smokers problem](https://en.wikipedia.org/wiki/Cigarette\_smokers\_problem)
+
+
+* _Popular operating systems_
+  * _Linux_
+    * [locking](https://www.kernel.org/doc/html/latest/locking/index.html)
+  * _Windows_
+    * [Debugging a Deadlock](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugging-a-deadlock)
+  * _C#_
+
+  * _Java_
+
+  * _C++_
+
+
+* _Examples_
+
+* _Video_
+
 
 ### thread
 * _Concepts_
