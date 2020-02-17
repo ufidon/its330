@@ -1,0 +1,10 @@
+# process/thread synchronization #
+
+# 1. Demonstrate mutex in Ubuntu using pthread.
+
+
+# 2. Demonstrate semaphore in Windows Server using Windows API. 
+
+
+# 3. Demonstrate monitor using C#.
+
