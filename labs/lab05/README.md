@@ -34,7 +34,7 @@ _References_
 
 
 **Youtube Videos**
-
+* [synchronization](https://youtu.be/GpTDNMjXsFM)
 
 
 
