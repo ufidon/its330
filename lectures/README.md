@@ -174,6 +174,8 @@ Course materials and demos for lectures
   * [Producer–consumer problem](https://en.wikipedia.org/wiki/Producer%E2%80%93consumer\_problem)
   * [Readers–writers problem](https://en.wikipedia.org/wiki/Readers%E2%80%93writers\_problem)
   * [Dining philosophers problem](https://en.wikipedia.org/wiki/Dining\_philosophers\_problem)
+  * [Priority inversion](https://en.wikipedia.org/wiki/Priority\_inversion)
+  * [Priority inheritance](https://en.wikipedia.org/wiki/Priority\_inheritance)
 
 * _Popular operating systems_
   * _Linux_
