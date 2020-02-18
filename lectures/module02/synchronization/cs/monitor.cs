@@ -36,7 +36,7 @@ public class Example
 									
 										// TODO: Could you find problems in the following six lines of code?
 										// TODO: Verfiy your guess by checking the program outputs carefully
-										// TODO: Find a solution to solve the problems. (Optional)
+										// TODO: Change the sleep time to 100, 10, 0, respectively, then compile and run and check the output, describe your observation one by one
                                       Interlocked.Add(ref n, taskN);
 									  Thread.Sleep(1000);
 									  Console.WriteLine("Task {0,2} updated the total number of generated random numbers to  {1:N0}",
