@@ -1,0 +1,10 @@
+# deadlock #
+
+# 1. Demonstrate deadlock in Ubuntu using pthread.
+
+
+# 2. Demonstrate deadlock in Windows Server using Windows API. 
+
+
+# 3. Demonstrate deadlock using C#.
+
