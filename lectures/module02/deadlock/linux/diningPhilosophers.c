@@ -34,7 +34,7 @@ void *philosopher(void *arg)
 
         /** TODO:
          * 1. compile, run, observe, describe your observation
-         * 2. comment out line 35, compile, run, observe, describe your observation
+         * 2. comment out line 40, compile, run, observe, describe your observation
          * 3. explain the difference
         */
         sleep(SLOTH[pID]);

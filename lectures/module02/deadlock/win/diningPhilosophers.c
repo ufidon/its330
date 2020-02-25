@@ -44,7 +44,7 @@ DWORD WINAPI philosopher( LPVOID lpParam )
          * 2. comment out line 47, compile, run, observe, describe your observation
          * 3. explain the difference
         */
-        //Sleep(SLOTH[pID]);
+        Sleep(SLOTH[pID]);
 
         printf("Philosopher %d is trying picking up his RIGHT chopstick\n", pID);
         //pthread_mutex_lock(&chopsticks[(pID+1)%N]);
