@@ -1,0 +1,10 @@
+# memory allocation #
+
+# 1. Demonstrate memory allocation in Ubuntu using system call.
+
+
+# 2. Demonstrate memory allocation in Windows Server using Windows API. 
+
+
+# 3. Demonstrate memory allocation using C#.
+
