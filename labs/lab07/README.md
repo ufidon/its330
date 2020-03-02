@@ -12,7 +12,7 @@ In this lab,  demonstrate [memory allocation](./lab07-demo.txt).
 
 _Tasks_
 
-1. see [lab06-demo](./lab07-demo.txt)
+1. see [lab07-demo](./lab07-demo.txt)
 
 
 _References_
