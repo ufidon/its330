@@ -2,4 +2,4 @@
 Course materials and demos for lectures
 
 
-## Module01: Overview
+## Module04: Persistent storage management

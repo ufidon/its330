@@ -299,10 +299,15 @@ Course materials and demos for lectures
 ### Virtual memory
 
 * _Concepts_
-  * [Virtual memory](https://en.wikipedia.org/wiki/Virtual\_memory)
-  * [Memory management](https://en.wikipedia.org/wiki/Memory\_management)
-  * [Memory management unit](https://en.wikipedia.org/wiki/Memory\_management\_unit)
-  * [Memory protection](https://en.wikipedia.org/wiki/Memory\_protection)
+  * _Wikipedia_
+    * [Virtual memory](https://en.wikipedia.org/wiki/Virtual\_memory)
+    * [Memory management](https://en.wikipedia.org/wiki/Memory\_management)
+    * [Memory management unit](https://en.wikipedia.org/wiki/Memory\_management\_unit)
+    * [Memory protection](https://en.wikipedia.org/wiki/Memory\_protection)
+  * _Misc_
+    * [Virtual Memory in Operating System](https://www.geeksforgeeks.org/virtual-memory-in-operating-system/)
+    * [How Virtual Memory Works](https://computer.howstuffworks.com/virtual-memory.htm)
+    * [An Introduction to Virtual Memory in Windows](https://www.c-sharpcorner.com/uploadfile/SamTomato/an-introduction-to-virtual-memory-in-windows/)
 
 ### Memory partition
 * _Concepts_

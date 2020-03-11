@@ -1,0 +1,10 @@
+# memory allocation #
+
+# 1. Demonstrate virtual memory allocation in Ubuntu using system call.
+
+
+# 2. Demonstrate virtual memory allocation in Windows Server using Windows API. 
+
+
+# 3. Demonstrate virtual memory allocation using C#.
+
