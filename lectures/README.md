@@ -384,11 +384,29 @@ Course materials and demos for lectures
 ### Storage devices
 * _Concepts_
  * [Computer data storage](https://en.wikipedia.org/wiki/Computer\_data\_storage)
+ * [Hard disk drive](https://en.wikipedia.org/wiki/Hard\_disk\_drive)
+ * [Magnetic tape](https://en.wikipedia.org/wiki/Magnetic\_tape)
+ * [Optical disc](https://en.wikipedia.org/wiki/Optical\_disc)
+ * [Solid-state drive](https://en.wikipedia.org/wiki/Solid-state\_drive)
 
-### File system interface
-### Persistent storage structure
-### File system implementation
-
+### File system interface & implementation
+* _Concepts_
+  * [File system](https://en.wikipedia.org/wiki/File\_system)
+  * [File system API](https://en.wikipedia.org/wiki/File\_system\_API)
+  * [Virtual file system](https://en.wikipedia.org/wiki/Virtual\_file\_system)
+  * [Comparison of file systems](https://en.wikipedia.org/wiki/Comparison\_of\_file\_systems)
+  * [List of file systems](https://en.wikipedia.org/wiki/List\_of\_file\_systems)
+* _Popular filesystems_
+  * [Linux: Extended file system](https://en.wikipedia.org/wiki/Extended\_file\_system)
+    * [second extended file system](https://en.wikipedia.org/wiki/Ext2)
+    * [third extended filesystem](https://en.wikipedia.org/wiki/Ext3)
+    * [ext4 journaling file system](https://en.wikipedia.org/wiki/Ext4)
+  * _Windows file systems_
+    * [FAT: File Allocation Table](https://en.wikipedia.org/wiki/File\_Allocation\_Table)
+    * [ExFAT: Extensible File Allocation Table](https://en.wikipedia.org/wiki/ExFAT)
+    * [NTFS: New Technology File System](https://en.wikipedia.org/wiki/NTFS)
+    * [NTFS-3G](https://en.wikipedia.org/wiki/NTFS-3G)
+    * [Open Source: NTFS-3G](https://www.tuxera.com/community/open-source-ntfs-3g/)
 
 ## Module05: I/O system
 * _Concepts_
@@ -414,6 +432,37 @@ Course materials and demos for lectures
 
 
 ## Module06: Protection & security
+* _Concepts_
+  * [Computer security](https://en.wikipedia.org/wiki/Computer\_security)
+  * [Operating Systems Security](http://wiki.cas.mcmaster.ca/index.php/Operating\_Systems\_Security)
+    * [Secure by default](https://en.wikipedia.org/wiki/Secure\_by\_default)
+    * [Secure by design](https://en.wikipedia.org/wiki/Secure\_by\_design)
+    * [Multilevel security](https://en.wikipedia.org/wiki/Multilevel\_security)
+    * [Hardening ](https://en.wikipedia.org/wiki/Hardening\_\(computing\))
+    * [Security-evaluated operating system](https://en.wikipedia.org/wiki/Security-evaluated\_operating\_system)
+  * [Computer access control](https://en.wikipedia.org/wiki/Computer\_access\_control)
+    * [Principle of least privilege](https://en.wikipedia.org/wiki/Principle\_of\_least\_privilege)
+    * [Privilege escalation](https://en.wikipedia.org/wiki/Privilege\_escalation)
+    * [CPU modes](https://en.wikipedia.org/wiki/CPU\_modes)
+    * [Intel Management Engine](https://en.wikipedia.org/wiki/Intel\_Management\_Engine)
+    * [Protection ring](https://en.wikipedia.org/wiki/Protection\_ring)
+    * [Protected mode](https://en.wikipedia.org/wiki/Protected\_mode)
+    * [Process isolation](https://en.wikipedia.org/wiki/Process\_isolation)
+    * [User space](https://en.wikipedia.org/wiki/User\_space)
+    * [Kernel ](https://en.wikipedia.org/wiki/Kernel\_\(operating\_system\))
+    * [x86 virtualization](https://en.wikipedia.org/wiki/X86\_virtualization)
+  * _popular os_
+      * _Linux_
+        * [Linux Security Modules](https://en.wikipedia.org/wiki/Linux\_Security\_Modules)
+        * [Ubuntu security features](https://wiki.ubuntu.com/Security/Features)
+        * [Ubuntu basic security](https://wiki.ubuntu.com/BasicSecurity)
+        * [Security doc](https://help.ubuntu.com/lts/serverguide/security.html)
+        * [Security-Enhanced Linux](https://en.wikipedia.org/wiki/Security-Enhanced\_Linux)
+        * [Security-focused operating system](https://en.wikipedia.org/wiki/Security-focused\_operating\_system)
+      * _Windows_
+        * [Security and Maintenance](https://en.wikipedia.org/wiki/Security\_and\_Maintenance)
+        * [Security and Identity](https://docs.microsoft.com/en-us/windows/win32/security)
+
 
 ## References
 * [How to write a computer operating system in C/C++ from scratch?](https://samypesse.gitbook.io/how-to-create-an-operating-system/)
