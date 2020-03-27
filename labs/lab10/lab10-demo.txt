@@ -1,0 +1,7 @@
+# file system investigation #
+
+# 1. Investigate file system Ext4/NTFS in Ubuntu.
+
+# 2. Investigate file system FAT32/NTFS  in Windows Server. 
+
+
