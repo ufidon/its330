@@ -2,6 +2,6 @@
 
 # 1. Investigate file system Ext4/NTFS in Ubuntu.
 
-# 2. Investigate file system FAT32/NTFS  in Windows Server. 
+# 2. Investigate file system FAT/FAT32/NTFS  in Windows Server. 
 
 
