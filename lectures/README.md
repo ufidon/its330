@@ -423,11 +423,31 @@ Course materials and demos for lectures
   * _Windows_
     * [Windows Interrupt Service Routines](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/interrupt-service-routines)
     * [Keyboard and Mouse Input](https://docs.microsoft.com/en-us/windows/win32/inputdev/user-input)
-    * [C# System.Windows.Input Namespace](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.keyboard?view=netframework-4.8)
+    * [Windows hardware developer documentation](https://docs.microsoft.com/en-us/windows-hardware/drivers/)
+    * [About Windows Networking](https://docs.microsoft.com/en-us/windows/win32/wnet/about-windows-networking)
+    * [Networking and Internet](https://docs.microsoft.com/en-us/windows/win32/networking)
+    * [Windows Sockets 2](https://docs.microsoft.com/en-us/windows/win32/winsock/windows-sockets-start-page-2)
   * Linux
     * [Linux IO](https://www.kernel.org/doc/Documentation/input/input.txt)
     * [Accessing Keys from Linux Input Device](https://stackoverflow.com/questions/20943322/accessing-keys-from-linux-input-device)
-
+    * [Linux Kernel and Driver Development Training by Bootlin](https://bootlin.com/doc/training/linux-kernel/)
+    * [The Linux driver implementer’s API guide](https://www.kernel.org/doc/html/v4.11/driver-api/index.html)
+    * [Ubuntu Network Configuration](https://help.ubuntu.com/lts/serverguide/network-configuration.html)
+    * [59 Linux Networking commands and scripts](https://haydenjames.io/linux-networking-commands-scripts/)
+    * [A Linux Sysadmin’s Guide to Network Management, Troubleshooting and Debugging](https://www.tecmint.com/linux-networking-commands/)
+    * [Linux Networking 101](https://www.actualtechmedia.com/wp-content/uploads/2017/12/CUMULUS-NETWORKS-Linux101.pdf)
+    * [Linux Networking](http://linux-training.be/linuxnet.pdf)
+    * [The Tenouk's Linux Socket programming tutorial](https://www.tenouk.com/cnlinuxsockettutorials.html)
+    * [Beej's Guide to Network Programming](https://beej.us/guide/bgnet/)
+    * [Socket Programming in C/C++](https://www.geeksforgeeks.org/socket-programming-cc/)
+  * _C#_
+    * [C# System.Windows.Input Namespace](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.keyboard?view=netframework-4.8)
+    * [How to C# Socket programming](http://csharp.net-informations.com/communications/csharp-socket-programming.htm)
+  * _Java_
+    * [Java Networking Overview](https://docs.oracle.com/javase/7/docs/technotes/guides/net/overview/overview.html)
+    * [Java Networking Tutorial](https://docs.oracle.com/javase/8/docs/technotes/guides/net/index.html)
+    * [Trail: Custom Networking](https://docs.oracle.com/javase/tutorial/networking/index.html)
+    
 * _Video_
 
 
@@ -459,10 +479,19 @@ Course materials and demos for lectures
         * [Security doc](https://help.ubuntu.com/lts/serverguide/security.html)
         * [Security-Enhanced Linux](https://en.wikipedia.org/wiki/Security-Enhanced\_Linux)
         * [Security-focused operating system](https://en.wikipedia.org/wiki/Security-focused\_operating\_system)
+        * [Linux kernel Security documentation](https://www.kernel.org/doc/html/v4.11/security/index.html)
+        * [Linux Kernel Crypto API](https://www.kernel.org/doc/html/v4.11/crypto/index.html)
+        
       * _Windows_
         * [Security and Maintenance](https://en.wikipedia.org/wiki/Security\_and\_Maintenance)
         * [Security and Identity](https://docs.microsoft.com/en-us/windows/win32/security)
-
+      * _C#_
+        * [Security in .NET](https://docs.microsoft.com/en-us/dotnet/standard/security/)
+      * _Java_
+        * [Java security](https://en.wikipedia.org/wiki/Java\_security)
+        * [An Introduction to the Java Security API](https://www.developer.com/java/other/an-introduction-to-the-java-security-api.html)
+        * [Java Cryptography Architecture(JCA) Reference Guide](https://docs.oracle.com/javase/7/docs/technotes/guides/security/crypto/CryptoSpec.html)
+        * [Secure Coding Guidelines for Java SE](https://www.oracle.com/technetwork/java/seccodeguide-139067.html)
 
 ## References
 * [How to write a computer operating system in C/C++ from scratch?](https://samypesse.gitbook.io/how-to-create-an-operating-system/)
