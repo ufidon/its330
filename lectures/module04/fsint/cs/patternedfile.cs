@@ -48,7 +48,7 @@ class Program
 
             var files = from file in Directory.EnumerateFiles(docPath, "*.txt", SearchOption.AllDirectories)
                         from line in File.ReadLines(file)
-                        where line.Contains("TEST")
+                        where line.Contains(strTarget)
                         select new
                         {
                             File = file,
