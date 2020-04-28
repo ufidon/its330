@@ -10,8 +10,8 @@
 * On Ubuntu:
 * Compile: mcs hmacsha256.cs
 * Run:
-* 1. No data file provided: .\hmacsha256
-* 2. Provide a data file: .\hmacsha256 <datafile name>
+* 1. No data file provided: ./hmacsha256.exe
+* 2. Provide a data file: ./hmacsha256.exe <datafile name>
 */
 
 using System;
