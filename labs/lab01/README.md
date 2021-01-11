@@ -5,15 +5,17 @@ Course materials and demos for labs
 ## Lab01: Setup lab environment
 **1.Description**
 
-In this lab, setup two virtual machines and put them in a NAT network of VMWare Workstation Player/VirtualBox: Windows server and Ubuntu, both use the latest stable versions.
+Setup environment for developing C/C++, C#, Python and Java(Optional) programs.
 
-If your host is Windows 10, you may use it in this course instead of the Windows server VM.
+If your host PC is NOT Windows, you may setup one virtual machine for Windows 10/Windows server and put it in a NAT network of VMWare Workstation Player/VirtualBox. It is optional to create another VM for Ubuntu LTS, both use the latest stable versions.
+
+If your host is Windows 10, you may use it in this course instead of guest Windows in virtual machine.
 
 **2.Steps**
 
-1. (40%) Create VMS, NAT network, download and install ISOs and software
-   1. (20%) Setup Windows server, then install chrome browser, visual studio, windows SDK, Zulu OpenJDK, Anaconda, Eclipse
-   2. (20%) Setup Ubuntu, open a terminal run the following commands then install visual studio code
+1. (40%) Create VMs, NAT network, download and install ISOs and software
+   1. Setup Windows server, then install chrome browser, visual studio, windows SDK, Anaconda, Zulu OpenJDK(Optional), and Eclipse(Optional)
+   2. (Optional) Setup Ubuntu, open a terminal run the following commands then install visual studio code
 
 ```bash
 # Inside Ubuntu, open a terminal, run the following commands
@@ -23,9 +25,9 @@ sudo apt install terminator build-essential git cmake vim
 sudo apt install apt-transport-https dirmngr
 sudo apt-get install openjdk-11-jdk mono-mcs
 ```
-4. (60%) Download and compile the source code files in c and c# programs, fix the compilation errors and run them to get the results
-   1. (30%, each file 5%) On the Windows server VM or Windows host, compile and run the following: win32-pipe-child.c, DateClient.java and all C# files
-   2. (30%, each file 5%) On the Ubuntu Linux VM, compile and run the following: shm-posix-consumer.c, DateClient.java and all C# files
+2. (60%) Download and compile the source code files in c and c# programs, fix the compilation errors and run them to get the results
+   1. (each file 10%) On the Windows server VM or Windows host, compile and run the following: win32-pipe-child.c, all C# files and DateClient.java(Optional)
+   2. (Optional) On the Ubuntu Linux VM, compile and run the following: shm-posix-consumer.c, DateClient.java and all C# files
 
 
 ## References
