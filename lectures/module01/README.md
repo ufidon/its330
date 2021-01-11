@@ -32,5 +32,11 @@ Course materials and demos for lectures
     * [Deeper into Windows Architecture](https://docs.microsoft.com/en-us/archive/blogs/hanybarakat/deeper-into-windows-architecture)
     * [Programming reference for the Win32 API](https://docs.microsoft.com/en-us/windows/win32/api/)
     * [API Index for desktop Windows applications](https://docs.microsoft.com/en-us/windows/win32/apiindex/api-index-portal)
+  * [MacOS](https://en.wikipedia.org/wiki/MacOS)
+    * [macos](https://www.apple.com/macos)
+  * [Android](https://en.wikipedia.org/wiki/Android_(operating_system))
+    * [android](https://www.android.com/)
+  * [iOS](https://en.wikipedia.org/wiki/IOS)
+    * [ios](https://www.apple.com/ios)
 * _Video_
   * [What does what in your computer? Computer parts Explained](https://www.youtube.com/watch?v=ExxFxD4OSZ0)
