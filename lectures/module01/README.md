@@ -15,9 +15,9 @@ Course materials and demos for lectures
     * [List of interface bit rates](https://en.wikipedia.org/wiki/List\_of\_interface\_bit\_rates)
 * _Popular operating systems_
   * [list of operating systems](https://en.wikipedia.org/wiki/List\_of\_operating\_systems)
-  * [Ubuntu](https://ubuntu.com/)
-  * [Minix](https://www.minix3.org/)
-  * [FreeRTOS](https://www.freertos.org/)
+    * [Ubuntu](https://ubuntu.com/)
+    * [Minix](https://www.minix3.org/)
+    * [FreeRTOS](https://www.freertos.org/)
 * _Examples_
   * [Minix 3 documentation](https://wiki.minix3.org/doku.php?id=www:documentation:start) 
   * Linux
@@ -40,3 +40,9 @@ Course materials and demos for lectures
     * [ios](https://www.apple.com/ios)
 * _Video_
   * [What does what in your computer? Computer parts Explained](https://www.youtube.com/watch?v=ExxFxD4OSZ0)
+* _Tools_
+  * [Windows Sysinternals](https://docs.microsoft.com/en-us/sysinternals/)
+  * [CPU-Z](https://www.cpuid.com/softwares/cpu-z.html)
+  * [Ten Free Benchmark Programs for Windows](https://www.makeuseof.com/tag/5-free-benchmark-programs/)
+  * [How to Benchmark Your Windows PC: 5 Free Benchmarking Tools](https://www.howtogeek.com/111733/how-to-benchmark-your-windows-pc-5-free-benchmarking-tools/)
+  * [Computer Storage Units Conversion Calculator](https://www.calculatorsoup.com/calculators/conversions/computerstorage.php)
