@@ -14,7 +14,7 @@ If your host is Windows 10, you may use it in this course instead of guest Windo
 **2.Steps**
 
 1. (40%) Create VMs, NAT network, download and install ISOs and software
-   1. Setup Windows server, then install chrome browser, visual studio, windows SDK, Anaconda, git, Zulu OpenJDK(Optional), and Eclipse(Optional)
+   1. Setup Windows server, then install chrome browser, visual studio(10%), windows SDK(10%), Anaconda(10%), git(10%), Zulu OpenJDK(Optional), and Eclipse(Optional)
    2. (Optional) Setup Ubuntu, open a terminal run the following commands then install visual studio code
 
 ```bash
@@ -26,7 +26,7 @@ sudo apt install apt-transport-https dirmngr
 sudo apt-get install openjdk-11-jdk mono-mcs
 ```
 2. (60%) Download and compile the source code files in c and c# programs, fix the compilation errors and run them to get the results
-   1. (each file 10%) On the Windows server VM or Windows host, compile and run the following: win32-pipe-child.c, all C# files and DateClient.java(Optional)
+   1. (each file 12%) On the Windows server VM or Windows host, compile and run the following: win32-pipe-child.c, all four C# files and DateClient.java(Optional)
    2. (Optional) On the Ubuntu Linux VM, compile and run the following: shm-posix-consumer.c, DateClient.java and all C# files
 
 
