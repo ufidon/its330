@@ -14,7 +14,7 @@ If your host is Windows 10, you may use it in this course instead of guest Windo
 **2.Steps**
 
 1. (40%) Create VMs, NAT network, download and install ISOs and software
-   1. Setup Windows server, then install chrome browser, visual studio, windows SDK, Anaconda, Zulu OpenJDK(Optional), and Eclipse(Optional)
+   1. Setup Windows server, then install chrome browser, visual studio, windows SDK, Anaconda, git, Zulu OpenJDK(Optional), and Eclipse(Optional)
    2. (Optional) Setup Ubuntu, open a terminal run the following commands then install visual studio code
 
 ```bash
