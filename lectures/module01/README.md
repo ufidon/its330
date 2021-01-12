@@ -46,3 +46,4 @@ Course materials and demos for lectures
   * [Ten Free Benchmark Programs for Windows](https://www.makeuseof.com/tag/5-free-benchmark-programs/)
   * [How to Benchmark Your Windows PC: 5 Free Benchmarking Tools](https://www.howtogeek.com/111733/how-to-benchmark-your-windows-pc-5-free-benchmarking-tools/)
   * [Computer Storage Units Conversion Calculator](https://www.calculatorsoup.com/calculators/conversions/computerstorage.php)
+  * [Data Transfer Rate Converter](https://www.thecalculatorsite.com/conversions/datarate.php)

@@ -13,8 +13,8 @@ If your host is Windows 10, you may use it in this course instead of guest Windo
 
 **2.Steps**
 
-1. (40%) Create VMs, NAT network, download and install ISOs and software
-   1. Setup Windows server, then install chrome browser, visual studio(10%), windows SDK(10%), Anaconda(10%), git(10%), Zulu OpenJDK(Optional), and Eclipse(Optional)
+1. (20%) Create VMs, NAT network, download and install ISOs and software
+   1. Setup Windows server, then install chrome browser, visual studio(5%), windows SDK(5%), Python3(5%), git(5%), Zulu OpenJDK(Optional), and Eclipse(Optional)
    2. (Optional) Setup Ubuntu, open a terminal run the following commands then install visual studio code
 
 ```bash
@@ -29,6 +29,12 @@ sudo apt-get install openjdk-11-jdk mono-mcs
    1. (each file 12%) On the Windows server VM or Windows host, compile and run the following: win32-pipe-child.c, all four C# files and DateClient.java(Optional)
    2. (Optional) On the Ubuntu Linux VM, compile and run the following: shm-posix-consumer.c, DateClient.java and all C# files
 
+3. (20%) Review questions
+   1. (10%) A [binary prefix](https://en.wikipedia.org/wiki/Binary_prefix) is a unit prefix for multiples of units in data processing, data transmission, and digital information, notably the bit and the byte, to indicate multiplication by a power of 2. *Fill in the following blanks and show your calculation.*
+      1. (5%, %1 for each) A ISO file of size 4.253GB = ?MB = ?KB = ?Gb = ?TB = ?B
+      2. (5%, %1 for each) In the specification of [USB 3.1](https://en.wikipedia.org/wiki/USB_3.0), USB 3.1 Gen 2 – SuperSpeed+, new 10 Gbit/s data rate over 1 lane using 128b/132b encoding. Its effective data rate can be up to 1212 MB/s = ?GB/s= ?GB/min= ?KB/s= ?Mb/min= ?bps
+   2. (10%) Rank the following storage systems from slowest to fastest, show your references: a. Hard-disk drives b. Registers c. Optical disk d. Main memory e. Nonvolatile memory f. Magnetic tapes g. Cache
+
 
 ## References
 **Where are the OSes and tools?** 
@@ -39,8 +45,11 @@ sudo apt-get install openjdk-11-jdk mono-mcs
   * [Windows 10 SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk)
   * [Visual Studio](https://visualstudio.microsoft.com/vs/)
   * [Visual Studio code](https://code.visualstudio.com/)
+  * [Python3](https://www.python.org/)
+  * [git](https://git-scm.com/)
   * [dotnet](https://dotnet.microsoft.com)
-
+  * [Computer Storage Units Conversion Calculator](https://www.calculatorsoup.com/calculators/conversions/computerstorage.php)
+  * [Data Transfer Rate Converter](https://www.thecalculatorsite.com/conversions/datarate.php)
 **Youtube Videos** 
   * [Create empty virtual machines for Ubuntu & Windows Server 2019 in VirtualBox 6](https://youtu.be/3PbnBVNWXpk)
   * [Install Ubuntu 18.04LTS in VirtualBox 6](https://youtu.be/3BHsizTRUg0)

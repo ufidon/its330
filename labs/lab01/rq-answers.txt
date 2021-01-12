@@ -1,0 +1,4 @@
+1.1 4.253GB = 4355.072MB = 4459593.728KB = 34.024Gb =  0.0041533203125TB =  4566623977.472B
+1.2 1212 MB/s = 1.18359375GB/s= 71.015625GB/min= 1241088KB/s= 581760Mb/min= 10166992896bps
+2. Based on the reference: https://en.wikipedia.org/wiki/Memory_hierarchy, the order from slowest to fastest is:
+f. < c. < a. < e. < d. < g. < b.
