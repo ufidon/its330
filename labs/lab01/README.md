@@ -46,6 +46,7 @@ sudo apt-get install openjdk-11-jdk mono-mcs
   * [Visual Studio](https://visualstudio.microsoft.com/vs/)
   * [Visual Studio code](https://code.visualstudio.com/)
   * [Python3](https://www.python.org/)
+    * [CMD opens window store when I type python](https://stackoverflow.com/questions/58754860/cmd-opens-window-store-when-i-type-python)
   * [git](https://git-scm.com/)
   * [dotnet](https://dotnet.microsoft.com)
   * [Computer Storage Units Conversion Calculator](https://www.calculatorsoup.com/calculators/conversions/computerstorage.php)
