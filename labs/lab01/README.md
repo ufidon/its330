@@ -38,27 +38,29 @@ sudo apt-get install openjdk-11-jdk mono-mcs
 
 ## References
 **Where are the OSes and tools?** 
-  * [VMware Workstation Player](https://www.vmware.com/products/workstation-player.html)
-  * [VirtualBox 6](https://www.virtualbox.org/)
-  * [Ubuntu mate LTS](https://ubuntu-mate.org/)
-  * [Windows server](https://www.microsoft.com/en-us/cloud-platform/windows-server)
-  * [Windows 10 SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk)
-  * [Visual Studio](https://visualstudio.microsoft.com/vs/)
-  * [Visual Studio code](https://code.visualstudio.com/)
-  * [Python3](https://www.python.org/)
-    * [CMD opens window store when I type python](https://stackoverflow.com/questions/58754860/cmd-opens-window-store-when-i-type-python)
-  * [git](https://git-scm.com/)
-  * [dotnet](https://dotnet.microsoft.com)
-  * [Computer Storage Units Conversion Calculator](https://www.calculatorsoup.com/calculators/conversions/computerstorage.php)
-  * [Data Transfer Rate Converter](https://www.thecalculatorsite.com/conversions/datarate.php)
-**Youtube Videos** 
-  * [Create empty virtual machines for Ubuntu & Windows Server 2019 in VirtualBox 6](https://youtu.be/3PbnBVNWXpk)
-  * [Install Ubuntu 18.04LTS in VirtualBox 6](https://youtu.be/3BHsizTRUg0)
-  * [Install Windows Server 2019 in VirtualBox 6](https://youtu.be/fQZFoSTSuPM)
-  * [Create SEED Ubuntu 16.04 virtual machines and NAT network](https://youtu.be/pwSlVJSCpu0)
-  * [How to run VirtualBox virtual machines on other computers with VirtualBox?](https://youtu.be/Ps30RJ1MzgQ)
-  * [Compile C/C# code on Windows Server 2019 and Ubuntu 18.04LTS](https://youtu.be/ajTLkAqamKs)
 
+* [VMware Workstation Player](https://www.vmware.com/products/workstation-player.html)
+* [VirtualBox 6](https://www.virtualbox.org/)
+* [Ubuntu mate LTS](https://ubuntu-mate.org/)
+* [Windows server](https://www.microsoft.com/en-us/cloud-platform/windows-server)
+* [Windows 10 SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk)
+* [Visual Studio](https://visualstudio.microsoft.com/vs/)
+* [Visual Studio code](https://code.visualstudio.com/)
+* [Python3](https://www.python.org/)
+ * [CMD opens window store when I type python](https://stackoverflow.com/questions/58754860/cmd-opens-window-store-when-i-type-python)
+* [git](https://git-scm.com/)
+* [dotnet](https://dotnet.microsoft.com)
+* [Computer Storage Units Conversion Calculator](https://www.calculatorsoup.com/calculators/conversions/computerstorage.php)
+* [Data Transfer Rate Converter](https://www.thecalculatorsite.com/conversions/datarate.php)
+
+**Youtube Videos** 
+
+* [Create empty virtual machines for Ubuntu & Windows Server 2019 in VirtualBox 6](https://youtu.be/3PbnBVNWXpk)
+* [Install Ubuntu 18.04LTS in VirtualBox 6](https://youtu.be/3BHsizTRUg0)
+* [Install Windows Server 2019 in VirtualBox 6](https://youtu.be/fQZFoSTSuPM)
+* [Create SEED Ubuntu 16.04 virtual machines and NAT network](https://youtu.be/pwSlVJSCpu0)
+* [How to run VirtualBox virtual machines on other computers with VirtualBox?](https://youtu.be/Ps30RJ1MzgQ)
+* [Compile C/C# code on Windows Server 2019 and Ubuntu 18.04LTS](https://youtu.be/ajTLkAqamKs)
 * [Zulu OpenJDK](https://www.azul.com/downloads/zulu-community)
 * [Setup JAVA_HOME,JDK_HOME, and JRE_HOME](https://confluence.atlassian.com/doc/setting-the-java_home-variable-in-windows-8895.html)
 
