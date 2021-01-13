@@ -35,6 +35,8 @@ sudo apt-get install openjdk-11-jdk mono-mcs
       2. (5%, %1 for each) In the specification of [USB 3.1](https://en.wikipedia.org/wiki/USB_3.0), USB 3.1 Gen 2 – SuperSpeed+, new 10 Gbit/s data rate over 1 lane using 128b/132b encoding. Its effective data rate can be up to 1212 MB/s = ?GB/s= ?GB/min= ?KB/s= ?Mb/min= ?bps
    2. (10%) Rank the following storage systems from slowest to fastest, show your references: a. Hard-disk drives b. Registers c. Optical disk d. Main memory e. Nonvolatile memory f. Magnetic tapes g. Cache
 
+**Demo video**
+* [Lab01: Setup lab environment](https://youtu.be/vtiv_vyaKk0)
 
 ## References
 **Where are the OSes and tools?** 
