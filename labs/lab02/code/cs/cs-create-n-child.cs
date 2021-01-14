@@ -1,0 +1,58 @@
+// ref: http://code217.blogspot.com/2014/12/create-child-processes-in-parallel-and.html
+
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ProcessWait
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            const int CHILDREN_NUM = 3;
+            try
+            {
+
+                Console.WriteLine("Parent process started executing...");
+                Console.WriteLine("Parent process is starting child processes...");
+                Parallel.For(0, CHILDREN_NUM, iIndex =>
+                {
+                    Console.WriteLine("Child process {0} started", iIndex);
+                    NewProcess(iIndex);
+                });
+                Console.WriteLine("All child processes completed.Waiting for user to press the enter key !!!");
+                Console.Read();
+                /*
+                Console.WriteLine("Parent process to continue execution.");
+                for (int iIndex = 0; iIndex < 10000; iIndex++)
+                {
+                    Console.WriteLine(iIndex.ToString());
+                }
+                */
+                Console.WriteLine("Parent process completed execution.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            Console.Read();
+        }
+
+        private static void NewProcess(int iIndex)
+        {
+            Process oRunIndex = new Process();
+            oRunIndex.StartInfo.FileName = "C:\\WINDOWS\\system32\\mspaint.exe";
+            oRunIndex.StartInfo.WorkingDirectory = @"c:\";
+            oRunIndex.StartInfo.CreateNoWindow = true;
+            oRunIndex.StartInfo.Arguments = string.Format("{0}", iIndex);
+
+            oRunIndex.Start();
+            oRunIndex.WaitForExit();
+        }
+    }
+
+}
