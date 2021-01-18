@@ -5,14 +5,14 @@ Course materials and demos for labs
 
 **1.Description**
 
-In this lab,  create processes on Windows using Windows API and C#.
+In this lab,  create processes on Windows using Windows API and C#, then investigate these processes with various tools.
 
 
 **2.Tasks(80%, each process 10%)**
 The four processes below must be: File explorer, MS paint, Snipping tool and Event viewer.
 
-1. Design, code, compile and test a console program using Windows API to create four processes.
-2. Design, code, compile and test a console program using C# to create four processes.
+1. Design, code, compile and test a console program using Windows API to create four processes, then investigate these processes with [Process Explorer](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer).
+2. Design, code, compile and test a console program using C# to create four processes, then investigate these processes with [Process Explorer](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer).
 
 **3.Review questions(20%)**
 1. (10%) What is the purpose of [system calls](https://en.wikipedia.org/wiki/System_call)?
