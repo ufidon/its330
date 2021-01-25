@@ -20,14 +20,14 @@ The four processes below must be: File explorer, MS paint, Snipping tool and Eve
 
 A comparison of Linux system calls and Windows API
 
-| services | Linux system calls | Windows API |
-| ------- | ----------------- | ----------- |
-| Process Control	|  |  |
-| File Manipulation	|  |  |
-| Device Manipulation	|  |  |
-| Information Maintenance	|  |  |
-| Communication	|  |  |
-| Security and Protection	|  |  |
+| services | functionality | Linux system calls | Windows API |
+| ------- | ---- | ----------------- | ----------- |
+| Process Control	|  |  |  |
+| File Manipulation	|   |  |  |
+| Device Manipulation	|  |  |  |
+| Information Maintenance	|  |  |  |
+| Communication	|  |  |  |
+| Security and Protection	|  |  |  |
 
 * [Searchable Linux Syscall Table for x86 and x86_64](https://filippo.io/linux-syscall-table/)
   * [Classification and Grouping of
