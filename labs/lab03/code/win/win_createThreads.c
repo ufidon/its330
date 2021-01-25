@@ -1,13 +1,18 @@
-// https://docs.microsoft.com/en-us/windows/win32/procthread/creating-threads
-// https://docs.microsoft.com/en-us/cpp/build/reference/md-mt-ld-use-run-time-library?view=vs-2019
-// https://social.msdn.microsoft.com/Forums/en-US/534b926b-ab1c-460d-b5f7-7ff0d85f8378/mainobj-error-lnk2019-unresolved-external-symbol-impmessageboxa16-referenced-in-function?forum=vcgeneral
-
+/*
+References:
+https://docs.microsoft.com/en-us/windows/win32/procthread/creating-threads
+https://docs.microsoft.com/en-us/cpp/build/reference/md-mt-ld-use-run-time-library?view=vs-2019
+https://social.msdn.microsoft.com/Forums/en-US/534b926b-ab1c-460d-b5f7-7ff0d85f8378/mainobj-error-lnk2019-unresolved-external-symbol-impmessageboxa16-referenced-in-function?forum=vcgeneral
+How to compile:
+cl /MD win_createThreads.c or
+cl /MT win_createThreads.c or
+cl win_createThread.c
+*/
 #include <windows.h>
 #include <tchar.h>
 #include <strsafe.h>
 
 #pragma comment(lib,"user32.lib")
-
 
 
 #define MAX_THREADS 3
@@ -33,7 +38,6 @@ int _tmain()
     HANDLE  hThreadArray[MAX_THREADS]; 
 
     // Create MAX_THREADS worker threads.
-
     for( int i=0; i<MAX_THREADS; i++ )
     {
         // Allocate memory for thread data.

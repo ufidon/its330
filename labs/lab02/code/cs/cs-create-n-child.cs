@@ -13,7 +13,15 @@ namespace ProcessWait
     {
         static void Main(string[] args)
         {
+            // number of processes
             const int CHILDREN_NUM = 3;
+
+            // programs to be loaded
+            string[] progs = {
+                "C:\\WINDOWS\\system32\\mspaint.exe", 
+                "C:\\WINDOWS\\system32\\notepad.exe", 
+                "C:\\WINDOWS\\system32\\win32calc.exe"
+            };
             try
             {
 
@@ -22,7 +30,7 @@ namespace ProcessWait
                 Parallel.For(0, CHILDREN_NUM, iIndex =>
                 {
                     Console.WriteLine("Child process {0} started", iIndex);
-                    NewProcess(iIndex);
+                    NewProcess(iIndex, progs[iIndex]);
                 });
                 Console.WriteLine("All child processes completed.Waiting for user to press the enter key !!!");
                 Console.Read();
@@ -42,10 +50,10 @@ namespace ProcessWait
             Console.Read();
         }
 
-        private static void NewProcess(int iIndex)
+        private static void NewProcess(int iIndex, string progname)
         {
             Process oRunIndex = new Process();
-            oRunIndex.StartInfo.FileName = "C:\\WINDOWS\\system32\\mspaint.exe";
+            oRunIndex.StartInfo.FileName = progname;
             oRunIndex.StartInfo.WorkingDirectory = @"c:\";
             oRunIndex.StartInfo.CreateNoWindow = true;
             oRunIndex.StartInfo.Arguments = string.Format("{0}", iIndex);

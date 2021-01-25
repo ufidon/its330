@@ -56,7 +56,28 @@ Course materials and demos for lectures
   * [Create threads in Linux API on Ubuntu](https://youtu.be/eG0m2Mb5OY8)
   * [Create threads in Windows API on Windows Server](https://youtu.be/PIXg_JME5_A)
 
+### thread
+* _Concepts_
+  * [Thread](https://en.wikipedia.org/wiki/Thread\_\(computing\))
+  * [Thread control block](https://en.wikipedia.org/wiki/Thread\_control\_block)
+  * [Fiber](https://en.wikipedia.org/wiki/Fiber\_\(computer\_science\))
+  * [Light Weight Kernel Threads](https://en.wikipedia.org/wiki/Light\_Weight\_Kernel\_Threads)
+  * [Thread pool](https://en.wikipedia.org/wiki/Thread\_pool)
+  * [Light-weight process](https://en.wikipedia.org/wiki/Light-weight\_process)
 
+* _Popular operating systems_
+  * [POSIX Threads](https://en.wikipedia.org/wiki/POSIX\_Threads)
+  * [POSIX Threads Programming](https://computing.llnl.gov/tutorials/pthreads/)
+  * [Windows Processes and Threads](https://docs.microsoft.com/en-us/windows/win32/procthread/processes-and-threads)
+
+* _Examples_
+  * [Threading in C#](http://www.albahari.com/threading/)
+  * [C# Managed Threading](https://docs.microsoft.com/en-us/dotnet/standard/threading/?view=netframework-4.8)
+  * [The managed thread pool in C#](https://docs.microsoft.com/en-us/dotnet/standard/threading/the-managed-thread-pool)
+  * [Java thread](https://docs.oracle.com/javase/tutorial/essential/concurrency/index.html)
+  * [Java Concurrency and Multithreading Tutorial](http://tutorials.jenkov.com/java-concurrency/index.html)
+
+* _Video_
 
 ### CPU scheduling
 * _Concepts_
@@ -195,29 +216,6 @@ Course materials and demos for lectures
 
 * _Video_
 
-
-### thread
-* _Concepts_
-  * [Thread](https://en.wikipedia.org/wiki/Thread\_\(computing\))
-  * [Thread control block](https://en.wikipedia.org/wiki/Thread\_control\_block)
-  * [Fiber](https://en.wikipedia.org/wiki/Fiber\_\(computer\_science\))
-  * [Light Weight Kernel Threads](https://en.wikipedia.org/wiki/Light\_Weight\_Kernel\_Threads)
-  * [Thread pool](https://en.wikipedia.org/wiki/Thread\_pool)
-  * [Light-weight process](https://en.wikipedia.org/wiki/Light-weight\_process)
-
-* _Popular operating systems_
-  * [POSIX Threads](https://en.wikipedia.org/wiki/POSIX\_Threads)
-  * [POSIX Threads Programming](https://computing.llnl.gov/tutorials/pthreads/)
-  * [Windows Processes and Threads](https://docs.microsoft.com/en-us/windows/win32/procthread/processes-and-threads)
-
-* _Examples_
-  * [Threading in C#](http://www.albahari.com/threading/)
-  * [C# Managed Threading](https://docs.microsoft.com/en-us/dotnet/standard/threading/?view=netframework-4.8)
-  * [The managed thread pool in C#](https://docs.microsoft.com/en-us/dotnet/standard/threading/the-managed-thread-pool)
-  * [Java thread](https://docs.oracle.com/javase/tutorial/essential/concurrency/index.html)
-  * [Java Concurrency and Multithreading Tutorial](http://tutorials.jenkov.com/java-concurrency/index.html)
-
-* _Video_
 
 ### Parallel computing
 * _Concepts_

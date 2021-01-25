@@ -1,25 +1,21 @@
 # its330
 Course materials and demos for labs
 
-
 ## Lab03: Create threads
 
+### 1. Description
+If a task can be divided into several parallel subtasks, then each subtask can be done with a thread, and their results can be aggregated by the process they reside. Computing efficiency can be improved in this way.
 
-_Description_
-```c
-In this lab,  create threads in Windows server and Ubuntu.
-```
+In this lab,  create threads on Windows using Windows API and C# to compute the average of large amount of data.
 
-_Tasks_
-
-
-1. Use [Linux thread API](http://man7.org/linux/man-pages/man7/pthreads.7.html) to create threads
-2. Use [Windows thread API](https://docs.microsoft.com/en-us/windows/win32/procthread/creating-threads) to create threads
-3. Create threads using [C# thread class](http://www.albahari.com/threading)
-4. (_Optional_) Create threads using [java.lang.Thread calss](https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html)
+### 2. Tasks
 
 
-_References_
+
+
+### 3. Review questions
+
+## References
 * Linux
   * [pthreads - POSIX threads](http://man7.org/linux/man-pages/man7/pthreads.7.html)
   * [POSIX thread (pthread) libraries](https://www.cs.cmu.edu/afs/cs/academic/class/15492-f07/www/pthreads.html)

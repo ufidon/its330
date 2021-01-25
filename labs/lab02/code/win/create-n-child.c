@@ -8,6 +8,7 @@
 #include <stdio.h>
 
 
+// number of processes
 #define N  3
 
 
@@ -17,7 +18,12 @@ void main( int argc, char *argv[] )
     STARTUPINFO si[N];
     PROCESS_INFORMATION pi[N];
     HANDLE hProcesses[N];
-    char* PROCESSES[N]={"C:\\WINDOWS\\system32\\mspaint.exe", "C:\\WINDOWS\\system32\\notepad.exe", "C:\\WINDOWS\\system32\\win32calc.exe"};
+
+    // the programs to be loaded
+    char* PROCESSES[N]={
+        "C:\\WINDOWS\\system32\\mspaint.exe", 
+        "C:\\WINDOWS\\system32\\notepad.exe", 
+        "C:\\WINDOWS\\system32\\win32calc.exe"};
 
     ZeroMemory( si, sizeof(si) );
     for (i = 0; i < N; i++)
