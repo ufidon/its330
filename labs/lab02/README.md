@@ -9,7 +9,7 @@ In this lab,  create processes on Windows using Windows API and C#, then investi
 
 
 **2.Tasks(80%, each process 10%)**
-The four processes below must be: File explorer, MS paint, Snipping tool and Event viewer.
+The four processes below could be: File explorer, MS paint, Snipping tool and Event viewer.
 
 1. Design, code, compile and test a console program using Windows API to create four processes, then investigate these processes with [Process Explorer](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer).
 2. Design, code, compile and test a console program using C# to create four processes, then investigate these processes with [Process Explorer](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer).
