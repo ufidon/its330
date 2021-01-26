@@ -8,12 +8,32 @@ If a task can be divided into several parallel subtasks, then each subtask can b
 
 In this lab,  create threads on Windows using Windows API and C# to compute the average of large amount of data.
 
-### 2. Tasks
+### 2. Tasks (40%) 
+1. Use the Windows API template is [win_sum.c](./code/win/win_sum.c) to find the average number of 1,2,3,...,10000 with 10 threads, then use a calculator to verify your result. The average value should be (1+10000)/2.
+   1. (10%) Design/code/compile/run the program to get the average
+   2. (10%) Verify the result using a calculator
+2. Use the C# template is [cs_sum.c](./code/cs/cs_sum.cs) to find the average number of 1,2,3,...,50000 with 10 threads, then use a calculator to verify your result. The average value should be (1+50000)/2.
+   1. (10%) Design/code/compile/run the program to get the average
+   2. (10%) Verify the result using a calculator
 
 
+### 3. Review questions (60%) 
+1. (20%) Using Amdahl’s Law, calculate the speedup gain of an application that has a 60 percent parallel component for
+   1. (10%) two processing cores.
+   2. (10%) four processing cores.
+  Show your calculation steps, without steps will be graded 0.
 
+2. (40%)Suppose that the following processes arrive for execution at the times indicated. Each process will run for the amount of time listed. In answering the questions, use nonpreemptive scheduling, and base all decisions on the information you have at the time the decision must be made.
 
-### 3. Review questions
+| Process | Arrival Time | Burst Time |
+| ------- | ------------ | ---------- |
+| P1 | 0.0 | 8 |
+| P2 | 0.4 | 4 |
+| P3 | 1.0 | 1 |
+
+   1. (10%) What is the average turnaround time for these processes with the FCFS scheduling algorithm?
+   2. (10%) What is the average turnaround time for these processes with the SJF scheduling algorithm?
+   3. (20%) The SJF algorithm is supposed to improve performance, but notice that we chose to run process P1 at time 0 because we did not know that two shorter processes would arrive soon. Compute what the average turnaround time will be if the CPU is left idle for the first 1 unit and then SJF scheduling is used. Remember that processes P1 and P2 are waiting during this idle time, so their waiting time may increase. This algorithm could be called future-knowledge scheduling.
 
 ## References
 * Linux
@@ -46,6 +66,9 @@ In this lab,  create threads on Windows using Windows API and C# to compute the 
 * OpenMP
   * [OpenMP](https://www.openmp.org/)
 
+* [Partition](https://en.wikipedia.org/wiki/Partition_(number_theory))
+  * [Floor and ceiling functions](https://en.wikipedia.org/wiki/Floor_and_ceiling_functions)
+  * [Amdahl's law](https://en.wikipedia.org/wiki/Amdahl%27s\_law)
 
 **Where are the codes and tools?**
 * [Windows Sysinternals](https://docs.microsoft.com/en-us/sysinternals/)

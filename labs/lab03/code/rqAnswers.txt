@@ -1,0 +1,6 @@
+Review question answers:
+1.1 speedup = 1.42
+1.2 speedup = 1.82
+2.1 10.53
+2.2 9.53
+2.3 6.86

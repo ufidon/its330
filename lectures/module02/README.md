@@ -79,6 +79,23 @@ Course materials and demos for lectures
 
 * _Video_
 
+### Parallel computing
+* _Concepts_
+  * [Parallel computing](https://en.wikipedia.org/wiki/Parallel_computing)
+  * [Amdahl's law](https://en.wikipedia.org/wiki/Amdahl%27s\_law)
+  * [Multi-core processor](https://en.wikipedia.org/wiki/Multi-core\_processor)
+  * [Hyper-threading](https://en.wikipedia.org/wiki/Hyper-threading)
+  * [OpenMP](https://en.wikipedia.org/wiki/OpenMP)
+
+* _Popular operating systems_
+
+* _Examples_
+  * [OpenMP](https://en.wikipedia.org/wiki/OpenMP)
+  * [Threading Building Blocks](https://en.wikipedia.org/wiki/Threading\_Building\_Blocks)
+  * [Java Concurrency and Multithreading Tutorial](http://tutorials.jenkov.com/java-concurrency/index.html)
+
+* _Video_
+
 ### CPU scheduling
 * _Concepts_
   * [Scheduling](https://en.wikipedia.org/wiki/Scheduling\_\(computing\))
@@ -213,26 +230,5 @@ Course materials and demos for lectures
 
 
 * _Examples_
-
-* _Video_
-
-
-### Parallel computing
-* _Concepts_
-  * [Parallel computing](https://en.wikipedia.org/wiki/Parallel_computing)
-  * [Amdahl's law](https://en.wikipedia.org/wiki/Amdahl%27s\_law)
-  * [Multi-core processor](https://en.wikipedia.org/wiki/Multi-core\_processor)
-  * [Hyper-threading](https://en.wikipedia.org/wiki/Hyper-threading)
-  * [OpenMP](https://en.wikipedia.org/wiki/OpenMP)
-
-
-* _Popular operating systems_
-
-
-
-* _Examples_
-  * [OpenMP](https://en.wikipedia.org/wiki/OpenMP)
-  * [Threading Building Blocks](https://en.wikipedia.org/wiki/Threading\_Building\_Blocks)
-  * [Java Concurrency and Multithreading Tutorial](http://tutorials.jenkov.com/java-concurrency/index.html)
 
 * _Video_
