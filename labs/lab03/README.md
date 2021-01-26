@@ -18,18 +18,20 @@ In this lab,  create threads on Windows using Windows API and C# to compute the 
 
 
 ### 3. Review questions (60%) 
+Show your calculation steps for each question, without steps will be graded 0.
+
 1. (20%) Using Amdahl’s Law, calculate the speedup gain of an application that has a 60 percent parallel component for
    1. (10%) two processing cores.
    2. (10%) four processing cores.
-  Show your calculation steps, without steps will be graded 0.
+  
 
 2. (40%)Suppose that the following processes arrive for execution at the times indicated. Each process will run for the amount of time listed. In answering the questions, use nonpreemptive scheduling, and base all decisions on the information you have at the time the decision must be made.
 
-| Process | Arrival Time | Burst Time |
-| ------- | ------------ | ---------- |
-| P1 | 0.0 | 8 |
-| P2 | 0.4 | 4 |
-| P3 | 1.0 | 1 |
+   | Process | Arrival Time | Burst Time |
+   | ------- | ------------ | ---------- |
+   | P1 | 0.0 | 8 |
+   | P2 | 0.4 | 4 |
+   | P3 | 1.0 | 1 |
 
    1. (10%) What is the average turnaround time for these processes with the FCFS scheduling algorithm?
    2. (10%) What is the average turnaround time for these processes with the SJF scheduling algorithm?
