@@ -55,6 +55,8 @@ Show your calculation steps for each question, without steps will be graded 0.
 * C#
   * [Using threads and threading](https://docs.microsoft.com/en-us/dotnet/standard/threading/using-threads-and-threading)
   * [Thread Class](https://docs.microsoft.com/en-us/dotnet/api/system.threading.thread?view=netframework-4.8)
+    * [Getting the unique identifier for the current managed thread](https://www.geeksforgeeks.org/c-sharp-getting-the-unique-identifier-for-the-current-managed-thread/)
+    * [How to tell if a thread is the main thread in C#](https://stackoverflow.com/questions/2374451/how-to-tell-if-a-thread-is-the-main-thread-in-c-sharp)
   * [Threading in C#](http://www.albahari.com/threading/)
   * [The managed thread pool](https://docs.microsoft.com/en-us/dotnet/standard/threading/the-managed-thread-pool)
   * [Thread Local Storage: Thread-Relative Static Fields and Data Slots](https://docs.microsoft.com/en-us/dotnet/standard/threading/thread-local-storage-thread-relative-static-fields-and-data-slots)
