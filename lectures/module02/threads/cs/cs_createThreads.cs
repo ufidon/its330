@@ -1,4 +1,6 @@
 // https://docs.microsoft.com/en-us/dotnet/api/system.threading.thread?view=netframework-4.8
+// https://stackoverflow.com/questions/2374451/how-to-tell-if-a-thread-is-the-main-thread-in-c-sharp
+// https://www.geeksforgeeks.org/c-sharp-getting-the-unique-identifier-for-the-current-managed-thread/
 
 using System;
 using System.Threading;
@@ -10,23 +12,28 @@ public class ThreadExample {
     // It loops ten times, writing to the console and yielding 
     // the rest of its time slice each time, and then ends.
     public static void ThreadProc() {
+
         for (int i = 0; i < 10; i++) {
            
             Console.WriteLine("ThreadProc: {0}", i);
             // Yield the rest of the time slice.
-            Thread.Sleep(0);
+            Thread.Sleep(1000);
         }
     }
 
     public static void Main() {
+        Console.WriteLine("Main ThreadId: {0}", System.Threading.Thread.CurrentThread.ManagedThreadId);
+
         Console.WriteLine("Main thread: Start a second thread.");
         // The constructor for the Thread class requires a ThreadStart 
         // delegate that represents the method to be executed on the 
         // thread.  C# simplifies the creation of this delegate.
         Thread t1 = new Thread(new ThreadStart(ThreadProc));
+        Console.WriteLine("Second threadId {0}", t1.ManagedThreadId);
 
         Console.WriteLine("Main thread: Start a third thread.");
         Thread t2 = new Thread(new ThreadStart(ThreadProc));
+        Console.WriteLine("Third threadId {0}", t2.ManagedThreadId);
 
         // Start ThreadProc.  Note that on a uniprocessor, the new 
         // thread does not get any processor time until the main thread 

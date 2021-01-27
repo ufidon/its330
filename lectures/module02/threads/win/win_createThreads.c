@@ -5,6 +5,9 @@
 #include <windows.h>
 #include <tchar.h>
 #include <strsafe.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 #pragma comment(lib,"user32.lib")
 
@@ -12,7 +15,7 @@
 
 #define MAX_THREADS 3
 #define BUF_SIZE 255
-#define WORK_TIME 10000
+#define WORK_TIME 100000
 
 DWORD WINAPI MyThreadFunction( LPVOID lpParam );
 void ErrorHandler(LPTSTR lpszFunction);
@@ -33,11 +36,13 @@ int _tmain()
     HANDLE  hThreadArray[MAX_THREADS]; 
 
     // Create MAX_THREADS worker threads.
+    printf("The main threadID is: %d\n", GetCurrentThreadId());
 
+    printf("I'm going to create %d threads.\n", MAX_THREADS);
     for( int i=0; i<MAX_THREADS; i++ )
     {
         // Allocate memory for thread data.
-
+        printf("Allocate memory for thread %d\n", i);
         pDataArray[i] = (PMYDATA) HeapAlloc(GetProcessHeap(), HEAP_ZERO_MEMORY,
                 sizeof(MYDATA));
 
@@ -55,7 +60,7 @@ int _tmain()
         pDataArray[i]->val2 = i+100;
 
         // Create the thread to begin execution on its own.
-
+        printf("Create thread %d\n", i);
         hThreadArray[i] = CreateThread( 
             NULL,                   // default security attributes
             0,                      // use default stack size  
@@ -77,11 +82,12 @@ int _tmain()
     } // End of main thread creation loop.
 
     // Wait until all threads have terminated.
-
+    
     WaitForMultipleObjects(MAX_THREADS, hThreadArray, TRUE, INFINITE);
-
+    printf("All threads complete!\n");
     // Close all thread handles and free memory allocations.
 
+    printf("Close all thread handles and free memory allocations.\n");
     for(int i=0; i<MAX_THREADS; i++)
     {
         CloseHandle(hThreadArray[i]);
@@ -119,7 +125,8 @@ DWORD WINAPI MyThreadFunction( LPVOID lpParam )
 
     // Print the parameter values using thread-safe functions.
 
-    StringCchPrintf(msgBuf, BUF_SIZE, TEXT("Parameters = %d, %d\n"), 
+    StringCchPrintf(msgBuf, BUF_SIZE, TEXT("ThreadID %d: %d, %d\n"), 
+        GetCurrentThreadId(),
         pDataArray->val1, pDataArray->val2); 
     StringCchLength(msgBuf, BUF_SIZE, &cchStringSize);
     WriteConsole(hStdout, msgBuf, (DWORD)cchStringSize, &dwChars, NULL);
