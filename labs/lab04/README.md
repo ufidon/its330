@@ -1,21 +1,34 @@
 # its330
 Course materials and demos for labs
 
-
 ## Lab04: thread's scheduling
 
-
-_Description_
-```c
-In this lab,  get/set thread's priority in Windows server and Ubuntu.
-```
-
-_Tasks_
-
-1. see [lab04-demo](./lab04-demo.txt)
+### 1. Description
+In this lab,  get/set thread's priority on Windows using Windows API and create a custom task scheduler using C#.
 
 
-_References_
+### 2. Tasks(20%) 
+1. (10%) Create one thread on Windows Server using Windows API, show its default thread priority, change its priority to a different one then show it again. 
+2. (10%) Create a custom task scheduler using C#, and show the threads.
+
+### 3. Review questions(80%)
+1. Consider the following set of processes, with the length of the CPU burst given in milliseconds:
+   
+   | Process | Burst Time | Priority |
+   | ------- | ---------- | -------- |
+   | P1 | 2 | 2 |
+   | P2 | 1 | 1 |
+   | P3 | 8 | 4 |
+   | P4 | 4 | 2 |
+   | P5 | 5 | 3 |
+
+   The processes are assumed to have arrived in the order P1, P2, P3, P4, P5, all at time 0, and use the following scheduling algorithms: FCFS, SJF, nonpreemptive priority (a larger priority number implies a higher priority), and RR (quantum = 2).
+   1. (20%, 5% for each algorithm) Draw four Gantt charts that illustrate the execution of these processes.
+   2. (20%，5% for each algorithm) What is the turnaround time of each process for each of the scheduling algorithms.
+   3. (20%，5% for each algorithm) What is the waiting time of each process for each of these scheduling algorithms?
+   4. (20%，5% for each algorithm) Which of the algorithms results in the minimum average waiting time (over all processes)?
+
+## References
 * Linux
   * [POSIX Threads Programming](https://computing.llnl.gov/tutorials/pthreads/)
   * [pthread scheduling](http://man7.org/linux/man-pages/man3/pthread_getschedparam.3.html)
