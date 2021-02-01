@@ -37,6 +37,10 @@ Show your calculation steps for each question, without steps will be graded 0.
    2. (10%) What is the average turnaround time for these processes with the SJF scheduling algorithm?
    3. (20%) The SJF algorithm is supposed to improve performance, but notice that we chose to run process P1 at time 0 because we did not know that two shorter processes would arrive soon. Compute what the average turnaround time will be if the CPU is left idle for the first 1 unit and then SJF scheduling is used. Remember that processes P1 and P2 are waiting during this idle time, so their waiting time may increase. This algorithm could be called future-knowledge scheduling.
 
+**Demo video**
+
+* [Lab03 Create Threads](https://youtu.be/n4Kj2LyJVD4)
+
 ## References
 * Linux
   * [pthreads - POSIX threads](http://man7.org/linux/man-pages/man7/pthreads.7.html)
