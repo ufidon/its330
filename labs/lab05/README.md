@@ -24,7 +24,7 @@ In this lab,  demonstrate the use of synchronization primitives below on Windows
    | P4 | 1 | 4 | 2 |
    | P5 | 3 | 5 | 3 |
 
-   The processes are assumed to have arrived in the order P2, P1, P4, P3, P5 as indicated,  and use the following scheduling algorithms: FCFS, preemptive SJF (same job length then FCFS), preemptive priority (a larger priority number implies a higher priority, same priority then FCFS), and RR (time slice or quantum = 2).
+   The processes are assumed to have arrived in the order P2, P1, P4, P3, P5 as indicated,  and use the following scheduling algorithms: FCFS, preemptive SJF (same job length then FCFS) or SRTF, preemptive priority (a larger priority number implies a higher priority, same priority then FCFS), and RR (time slice or quantum = 2).
    1. (20%, 5% for each algorithm) Draw four Gantt charts that illustrate the execution of these processes.
    2. (20%，5% for each algorithm) What is the turnaround time of each process for each of the scheduling algorithms.
    3. (20%，5% for each algorithm) What is the waiting time of each process for each of these scheduling algorithms?
