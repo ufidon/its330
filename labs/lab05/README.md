@@ -1,21 +1,37 @@
 # its330
 Course materials and demos for labs
 
-
 ## Lab05: process/thread synchronization
 
+### 1. Description
 
-_Description_
-```c
-In this lab,  use synchronization primitives in Windows server and Ubuntu.
-```
+In this lab,  demonstrate the use of synchronization primitives below on Windows:
+* semaphore in Windows API
+* monitor in C#
 
-_Tasks_
+### 2. Tasks (20%)
+1. (10%) Using template [semaphore.c](./code/win/semaphore.c), simulate the scenario that 10 computers print on 5 printers.
+2. (10%) Using template [monitor.cs](./code/cs/monitor.cs), analyze the scenario of using Monitor for synchronization.
 
-1. see [lab05-demo](./lab05-demo.txt)
+### 3. Review questions (80%)
+1. Consider the following set of processes, with the length of the CPU burst and arrival time given in milliseconds:
+   
+   | Process | Arrival Time | Burst Time | Priority |
+   | ------- | ------------ | ---------- | -------- |
+   | P1 | 1 | 2 | 2 |
+   | P2 | 0 | 1 | 1 |
+   | P3 | 2 | 8 | 4 |
+   | P4 | 1 | 4 | 2 |
+   | P5 | 3 | 5 | 3 |
+
+   The processes are assumed to have arrived in the order P2, P1, P4, P3, P5 as indicated,  and use the following scheduling algorithms: FCFS, preemptive SJF (same job length then FCFS), preemptive priority (a larger priority number implies a higher priority, same priority then FCFS), and RR (time slice or quantum = 2).
+   1. (20%, 5% for each algorithm) Draw four Gantt charts that illustrate the execution of these processes.
+   2. (20%，5% for each algorithm) What is the turnaround time of each process for each of the scheduling algorithms.
+   3. (20%，5% for each algorithm) What is the waiting time of each process for each of these scheduling algorithms?
+   4. (20%，5% for each algorithm) Which of the algorithms results in the minimum average waiting time (over all processes)?
 
 
-_References_
+## References
 * Linux
   * [POSIX thread (pthread) libraries](https://www.cs.cmu.edu/afs/cs/academic/class/15492-f07/www/pthreads.html)
   * [POSIX Threads Programming](https://computing.llnl.gov/tutorials/pthreads/)

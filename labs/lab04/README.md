@@ -22,7 +22,7 @@ In this lab,  get/set thread's priority on Windows using Windows API and create 
    | P4 | 4 | 2 |
    | P5 | 5 | 3 |
 
-   The processes are assumed to have arrived in the order P1, P2, P3, P4, P5, all at time 0, and use the following scheduling algorithms: FCFS, SJF, nonpreemptive priority (a larger priority number implies a higher priority), and RR (quantum = 2).
+   The processes are assumed to have arrived in the order P1, P2, P3, P4, P5, all at time 0, and use the following scheduling algorithms: FCFS, SJF (same job length then FCFS), nonpreemptive priority (a larger priority number implies a higher priority, same priority then FCFS), and RR (quantum = 2).
    1. (20%, 5% for each algorithm) Draw four Gantt charts that illustrate the execution of these processes.
    2. (20%，5% for each algorithm) What is the turnaround time of each process for each of the scheduling algorithms.
    3. (20%，5% for each algorithm) What is the waiting time of each process for each of these scheduling algorithms?
