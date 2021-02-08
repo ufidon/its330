@@ -8,7 +8,7 @@ In this lab,  get/set thread's priority on Windows using Windows API and create 
 
 
 ### 2. Tasks(20%) 
-1. (10%) Create one thread on Windows Server using Windows API, show its default thread priority, change its priority to a different one then show it again. 
+1. (10%) Create one thread on Windows using Windows API, show its default thread priority, change its priority to a different one then show it again. 
 2. (10%) Create a custom task scheduler using C#, and show the threads.
 
 ### 3. Review questions(80%)
@@ -27,6 +27,10 @@ In this lab,  get/set thread's priority on Windows using Windows API and create 
    2. (20%，5% for each algorithm) What is the turnaround time of each process for each of the scheduling algorithms.
    3. (20%，5% for each algorithm) What is the waiting time of each process for each of these scheduling algorithms?
    4. (20%，5% for each algorithm) Which of the algorithms results in the minimum average waiting time (over all processes)?
+
+**Demo video**
+
+* [Lab04: Thread scheduling](https://youtu.be/32r97obGzMs)
 
 ## References
 * Linux
