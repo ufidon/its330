@@ -18,11 +18,11 @@ In this lab,  demonstrate the use of synchronization primitives below on Windows
    
    | Process | Arrival Time | Burst Time | Priority |
    | ------- | ------------ | ---------- | -------- |
-   | P1 | 1 | 2 | 2 |
-   | P2 | 0 | 1 | 1 |
-   | P3 | 2 | 8 | 4 |
-   | P4 | 1 | 4 | 2 |
-   | P5 | 3 | 5 | 3 |
+   | P1 | 1 | 2 | 3 |
+   | P2 | 0 | 5 | 2 |
+   | P3 | 2 | 4 | 1 |
+   | P4 | 1 | 8 | 4 |
+   | P5 | 3 | 1 | 2 |
 
    The processes are assumed to have arrived in the order P2, P1, P4, P3, P5 as indicated,  and use the following scheduling algorithms: FCFS, preemptive SJF (same job length then FCFS) or SRTF, preemptive priority (a larger priority number implies a higher priority, same priority then FCFS), and RR (time slice or quantum = 2).
    1. (20%, 5% for each algorithm) Draw four Gantt charts that illustrate the execution of these processes.
