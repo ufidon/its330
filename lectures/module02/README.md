@@ -131,7 +131,7 @@ Course materials and demos for lectures
 
 
 
-### Interprocess communication
+### Intercrosses communication
 * _Concepts_
   * [Inter-process communication](https://en.wikipedia.org/wiki/Inter-process\_communication)
   * [Shared memory](https://en.wikipedia.org/wiki/Shared\_memory)
@@ -208,14 +208,19 @@ Course materials and demos for lectures
 * _Concepts_
   * [Deadlock](https://en.wikipedia.org/wiki/Deadlock)
   * [Concurrent computing](https://en.wikipedia.org/wiki/Concurrent\_computing)
-  * [Dining philosophers problem](https://en.wikipedia.org/wiki/Dining\_philosophers\_problem)
-  * [Producer–consumer problem](https://en.wikipedia.org/wiki/Producer%E2%80%93consumer\_problem)
-  * [Readers–writers problem](https://en.wikipedia.org/wiki/Readers%E2%80%93writers\_problem)
-  * [Sleeping barber problem](https://en.wikipedia.org/wiki/Sleeping\_barber\_problem)
-  * [Race condition](https://en.wikipedia.org/wiki/Race\_condition)
-  * [ABA problem](https://en.wikipedia.org/wiki/ABA\_problem)
-  * [Cigarette smokers problem](https://en.wikipedia.org/wiki/Cigarette\_smokers\_problem)
-
+    * [Dining philosophers problem](https://en.wikipedia.org/wiki/Dining\_philosophers\_problem)
+    * [Producer–consumer problem](https://en.wikipedia.org/wiki/Producer%E2%80%93consumer\_problem)
+    * [Readers–writers problem](https://en.wikipedia.org/wiki/Readers%E2%80%93writers\_problem)
+    * [Sleeping barber problem](https://en.wikipedia.org/wiki/Sleeping\_barber\_problem)
+    * [Race condition](https://en.wikipedia.org/wiki/Race\_condition)
+    * [ABA problem](https://en.wikipedia.org/wiki/ABA\_problem)
+    * [Cigarette smokers problem](https://en.wikipedia.org/wiki/Cigarette\_smokers\_problem)
+  * [Deadlock prevention algorithms](https://en.wikipedia.org/wiki/Deadlock_prevention_algorithms)
+    * [Banker's algorithm](https://en.wikipedia.org/wiki/Banker%27s_algorithm)
+      * [implementation](https://rosettacode.org/wiki/Banker%27s_algorithm)
+      * [Banker’s Algorithm in Operating System](https://www.geeksforgeeks.org/bankers-algorithm-in-operating-system-2/)
+  * [Wait-for graph](https://en.wikipedia.org/wiki/Wait-for_graph)
+    * [Edge chasing](https://en.wikipedia.org/wiki/Edge_chasing)
 
 * _Popular operating systems_
   * _Linux_
@@ -232,3 +237,6 @@ Course materials and demos for lectures
 * _Examples_
 
 * _Video_
+
+## References
+* [Theory of distributed systems](http://www.cs.yale.edu/homes/aspnes/classes/465/)
