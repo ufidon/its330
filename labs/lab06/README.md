@@ -1,21 +1,32 @@
 # its330
 Course materials and demos for labs
 
-
 ## Lab06: deadlock
 
+### 1. Description
+In this lab,  demonstrate deadlock in [the Philosopher Dining Problem](https://en.wikipedia.org/wiki/Dining\_philosophers\_problem) using Windows API and C#.
 
-_Description_
+### 2. Tasks (50%)
+1. (25%) Using template [diningPhilosophers.c](./code/win/diningPhilosophers.c) in Windows API, simulate the deadlock scenario that 5 philosophers dining 10 rounds.
+2. (25%) Using template [DiningPhilosophers2.cs](./code/cs/DiningPhilosophers2.cs) in C#, simulate the deadlock scenario that 5 philosophers dining 10 rounds.
 
-In this lab,  demonstrate deadlock in [the Philosopher Dining Problem](https://en.wikipedia.org/wiki/Dining\_philosophers\_problem).
+### 3. Review questions (50%)
+1. Given the following snapshot of a system, answer the questions below using the banker's algorithm.
+   | process | allocation | max  | available   |
+   | ------- | ---------- | ---  | ---------   |
+   |         | A B C D | A B C D | A B C D |
+   | P0      | 0 0 1 2 | 0 0 1 2 | 1 5 2 0 |
+   | P1      | 1 0 0 0 | 1 7 5 0 | |
+   | P2      | 1 3 5 4 | 2 3 5 6 | |
+   | P3      | 0 6 3 2 | 0 6 5 2 | |
+   | P4      | 0 0 1 4 | 0 6 5 6 | |
+   
+   1. (10%) What is the content of matrix need?
+   2. (20%) Is the system in a safe state?
+   3. (20%) If a request from process P1 arrives for (0,4,2,0), can the request be granted immediately?
 
 
-_Tasks_
-
-1. see [lab06-demo](./lab06-demo.txt)
-
-
-_References_
+## References
 
 * Linux
   * [POSIX thread (pthread) libraries](https://www.cs.cmu.edu/afs/cs/academic/class/15492-f07/www/pthreads.html)
@@ -38,8 +49,6 @@ _References_
 * [BCC - Tools for BPF-based Linux IO analysis, networking, monitoring, and more](https://github.com/iovisor/bcc)
 * [OSC10e](https://github.com/greggagne/osc10e)
 
-
-**Youtube Videos**
 
 
 
