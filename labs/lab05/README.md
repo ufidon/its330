@@ -30,6 +30,10 @@ In this lab,  demonstrate the use of synchronization primitives below on Windows
    3. (20%，5% for each algorithm) What is the waiting time of each process for each of these scheduling algorithms?
    4. (20%，5% for each algorithm) Which of the algorithms results in the minimum average waiting time (over all processes)?
 
+**Demo video**
+
+* [Lab05: Process thread synchronization](https://youtu.be/-iAaeOo73QQ)
+
 
 ## References
 * Linux

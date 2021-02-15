@@ -4,7 +4,7 @@ Course materials and demos for labs
 ## Lab06: deadlock
 
 ### 1. Description
-In this lab,  demonstrate deadlock in [the Philosopher Dining Problem](https://en.wikipedia.org/wiki/Dining\_philosophers\_problem) using Windows API and C#.
+In this lab,  practice deadlock in [the Philosopher Dining Problem](https://en.wikipedia.org/wiki/Dining\_philosophers\_problem) using Windows API and C#.
 
 ### 2. Tasks (50%)
 1. (25%) Using template [diningPhilosophers.c](./code/win/diningPhilosophers.c) in Windows API, simulate the deadlock scenario that 5 philosophers dining 10 rounds.

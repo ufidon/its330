@@ -4,19 +4,46 @@ Course materials and demos for labs
 
 ## Lab07: memory allocation
 
+### 1. Description
 
-_Description_
+In this lab,  practice memory allocation using Windows API and C#.
 
-In this lab,  demonstrate [memory allocation](./lab07-demo.txt).
+### 2. Tasks
 
+1. Practice application of memory-mapped file with template [share1.c](./code/win/share1.c), [share2.c](./code/win/share2.c) in Windows API.
+2. Find the dot Net garbage collector information with template [gs.cs](./code/cs/gc.cs) in C#.
 
-_Tasks_
+### 3. Review questions
+1. Given six memory partitions of 300 KB, 600 KB, 350 KB, 200 KB, 750 KB, and 125 KB (in order), how would the first-fit, best-fit, and worst-fit algorithms place processes of size 115 KB, 500 KB, 358 KB, 200 KB, and 375 KB (in order)? Find the total internal fragmentation and the total external fragmentation for each algorithm.
+2. Assuming a 1-KB page size, what are the page numbers and offsets for the following address references (provided as decimal numbers):
+   1. 3085
+   2. 42095
+3. Consider a paging system with the page table stored in memory.
+   1. If a memory reference takes 50 nanoseconds, how long does a paged memory reference take?
+   2. If we add TLBs, and 75 percent of all page-table references are found in the TLBs, what is the effective memory reference time? (Assume that finding a page-table entry in the TLBs takes 2 nanoseconds, if the entry is present.)
+4. Consider the following segment table: 
 
-1. see [lab07-demo](./lab07-demo.txt)
+   | Segment | Base | Length |
+   | -- | ---- | ----- |
+   | 0 | 219   | 600 |
+   | 1 | 2300  | 14  |
+   | 2 | 90    | 100 |
+   | 3 | 1327  | 580 |
+   | 4 | 1952  | 96  |
 
+   What are the physical addresses for the following logical addresses?
 
-_References_
+   | segment | offset |
+   | ------- | ------ |
+   | 0 | 430 |
+   | 3 | 400 |
+   | 2 | 500 |
 
+5. Suppose in a computer system, 8bits for logical address space with 4 bits for page number and 4 bits for page offset, 12 bits for physical address space with 8 bits frame number and 4 bits for frame offset. Give page table: 197,144,206,232,132,93,111,203,10,3,90,122,217,244,170,147 
+   1. Find the physical addresses for logical addresses: 99, 233
+   2. What is the logical address generate physical address 3261?
+
+## References
 * Linux
   * [mmap](http://man7.org/linux/man-pages/man2/mmap.2.html)
   * [shm_overview](http://man7.org/linux/man-pages/man7/shm\_overview.7.html)
