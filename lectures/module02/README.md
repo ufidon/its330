@@ -227,11 +227,12 @@ Course materials and demos for lectures
     * [locking](https://www.kernel.org/doc/html/latest/locking/index.html)
   * _Windows_
     * [Debugging a Deadlock](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugging-a-deadlock)
-  * _C#_
-
-  * _Java_
-
-  * _C++_
+  * _C#_ / _Java_ / _C++_ example from rosettacode.org
+    * [Dining philosophers](https://rosettacode.org/wiki/Dining_philosophers)
+    * [Banker's algorithm](https://rosettacode.org/wiki/Banker%27s_algorithm)
+    * [Synchronous concurrency](https://rosettacode.org/wiki/Synchronous_concurrency)
+    * [Mutex](https://rosettacode.org/wiki/Mutex)
+    * [Semaphore](https://rosettacode.org/wiki/Semaphore)
 
 
 * _Examples_
