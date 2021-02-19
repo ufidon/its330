@@ -1,4 +1,8 @@
 1.
+        IF   EF
+First: 827  325
+Best : 502  650
+Worst: 885  625
 
 2.1 page#=3, offset=13
 2.2 page#=41,offset = 111
