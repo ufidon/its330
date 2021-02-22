@@ -25,6 +25,9 @@ In this lab,  practice deadlock in [the Philosopher Dining Problem](https://en.w
    2. (20%) Is the system in a safe state?
    3. (20%) If a request from process P1 arrives for (0,4,2,0), can the request be granted immediately?
 
+**Demo video**
+
+* [Deadlock](https://youtu.be/ad_HiUVkCgA)
 
 ## References
 
