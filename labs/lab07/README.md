@@ -23,7 +23,9 @@ In this lab,  practice memory allocation using Windows API and C#.
 3. (10%) Consider a paging system with the page table stored in memory.
    1. (4%) If a memory reference takes 50 nanoseconds, how long does a paged memory reference take?
       (Hints: access page table first to find the mapping entry, then access the memory again, the memory is accessed twice)
-   2. (6%) If we add TLBs, and 75 percent of all page-table references are found in the TLBs, what is the effective memory reference time? (Assume that finding a page-table entry in the TLBs takes 2 nanoseconds, if the entry is present.) Hints:
+   2. (6%) If we add TLBs, and 75 percent of all page-table references are found in the TLBs, what is the effective memory reference time? (Assume that finding a page-table entry in the TLBs takes 2 nanoseconds, if the entry is present.) 
+   
+      Hints:
       1. the effective memory reference time = 75% access with TLB hit + 25% access with TLB miss
       2. access with TLB hit = TLB access + memory access
       3. access with TLB miss = TLB access + memory access (find the page entry and load into TLB) + memory access
@@ -38,6 +40,7 @@ In this lab,  practice memory allocation using Windows API and C#.
    | 4 | 1952  | 96  |
 
    What are the physical addresses for the following logical addresses?
+
    (Hints: logical address = segment base + offset)
 
    | segment | offset |
@@ -49,6 +52,7 @@ In this lab,  practice memory allocation using Windows API and C#.
 5. (13%) Suppose in a computer system, 8bits for logical address space with 4 bits for page number and 4 bits for page offset, 12 bits for physical address space with 8 bits frame number and 4 bits for frame offset. Give page table: 197,144,206,232,132,93,111,203,10,3,90,122,217,244,170,147 
    1. (4% each) Find the physical addresses for logical addresses: 99, 233
    2. (5%) What is the logical address generate physical address 3261?
+
    Hints:
 
    Page table:
