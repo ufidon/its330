@@ -15,7 +15,7 @@ import sys
 def FIFO(pagenum, processes):
 	hits = 0
 	misses = 0
-	pages = [-1]*pagenum
+	pages = [' ']*pagenum
 	i = 0
 	fifo = []
 
@@ -45,12 +45,13 @@ def FIFO(pagenum, processes):
 if __name__ == '__main__':
 	# test code 
 	pagenum = 4
-	processes = [ 7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2] 
+	#processes = [ 7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2] 
+	processes = ['h', 'a', 'b', 'c', 'a', 'd', 'a', 'e', 'c', 'd', 'a', 'd', 'c']
 
 	# usage: pFIFO.py pagenum processes
 	if len(sys.argv) > 1:
 		pagenum = int(sys.argv[1])
-		processes = list(map(int, sys.argv[2:]))
+		processes = sys.argv[2:]
 
 	misses = 0
 	hits = 0
