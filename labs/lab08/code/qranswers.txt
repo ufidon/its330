@@ -1,0 +1,45 @@
+1.
+effective access time = 8199.8ns
+performance degradation =  39.999 = 3999.9%
+
+2.1 FIFO: 20, LRU:20, OPT:16
+2.2 FIFO: 17, LRU:18, OPT:13
+
+3.1 
+Logical address| physical address | ref bit | page fault
+0xE12C         | 0x312C           | 1       | No
+0x3A9D         | 0xAA9D           | 1       | No
+0xA9D9         | 0x59D9           | 1       | No
+0x7001         | 0xF001           | 1       | No
+0xACA1         | 0x5CA1           | 1       | No 
+
+3.2
+Any single logical address falls in the unloaded pages 4,8,12,13 will result in a
+page fault.
+Take page 4 as an example, it has logical addresses: 4*4096 ->
+4*4096+(4096-1), i.e. 0x4000 -> 0x4FFF, so any one of 0x4000, 0x4001, . . .,
+0x4FFF will result in a page fault. Pay attention: a single logical address
+from an unloaded page is referred then this page will be loaded after the
+operating system handled this page fault successfully, so successive logical
+addresses from this page will not result in page faults unless it is 
+replaced by another page.
+
+3.3
+Check the page table, frame 6,7,11,12 are not used, as
+demonstrated in Question-2, they will be used first. However, in this
+question, only the reference bits are used to determine which frames will be
+chosen in resolving a page fault. The LRU page-replacement algorithm will
+use those frames with reference bit=0 to resolve page faults, check the page table, 
+these frames are (9, 1, 14, -, 13, 8, -, 0, 4, -,-, 2), those
+dashes are (6,7,11,12), so the set of frames will be chosen in resolving a page
+fault are (0,1,2,4,6,7,8,9,11,12,13,14) in ascending order.
+As a toy example, here the total size of physical memory equals the total size
+of virtual memory, so all pages can be loaded into frames, once all pages are
+loaded, no more page faults will happen. In the real world, the total size of
+physical memory usually is less than the total size of virtual memory, so we
+need page-replacement algorithms.
+Certainly, we can limit the total number frames to be less than the total
+number of pages, then page-replacement algorithms can be practiced as
+Question-2.
+
+4. A=20pages, B=30pages, C=50pages

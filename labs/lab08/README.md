@@ -1,21 +1,70 @@
 # its330
 Course materials and demos for labs
 
-
 ## Lab08: virtual memory allocation
 
+### 1. Description
 
-_Description_
+In this lab, practice virtual memory allocation using Windows API and C#.
 
-In this lab,  demonstrate [virtual memory allocation](./lab08-demo.txt).
+### 2. Tasks (20%)
 
+1. Practice reserving and committing virtual memory with template [rescom-mem.c](./code/win/rescom-mem.c) in Windows API.
+2. Investigate C# program memory allocation with template [vmem.cs](./code/cs/vmem.cs) in C#.
 
-_Tasks_
+### 3. Review questions (80%)
+1. (10%) In demanding paging system, effective access time is directly proportional to the page-fault rate. If the page fault rate is 0.1%, i.e., one access out of 1,000 causes a page fault, find the slowdown (or performance degradation) percentage caused by page faults. Given,
+   1. an average page-fault service time of 8 milliseconds
+   2. and a memory access time of 200 nanoseconds
 
-1. see [lab08-demo](./lab08-demo.txt)
+   Hints:
 
+   (effective access time) = (1- page fault rate)× (memory access time) + (page fault rate)× (average page-fault service time)
 
-_References_
+   ( performance degradation) =[(effective access time) - (memory access time)]/(memory access time)
+2. (30%) Find the number of page defaults of the reference string below
+
+   4, 2, 1, 7, 9, 8, 3, 5, 2, 6, 8, 1, 0, 7, 2, 4, 1, 3, 5, 8
+
+   for page replacement algorithms FIFO, LRU and OPT 
+   1. (15%, 5% for each algorithm) given 3 frames
+   2. (15%, 5% for each algorithm) Given 5 frames
+3. (30%) The page table shown below is for a system with 16-bit virtual and physical addresses and with 4,096-byte pages. The reference bit is set to 1 when the page has been referenced. Periodically, a thread zeroes out all values of the reference bit. A dash for a page frame indicates the page is not in memory. The page-replacement algorithm is localized LRU, and all numbers are provided in decimal.
+   1. (20%, 4% for each, %3 for the address, 1% for the reference bit) Convert the following virtual addresses (in hexadecimal) to the equivalent physical addresses. Provide answers in hexadecimal, also set the reference bit for the appropriate entry in the page table.
+
+    |page | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 |
+    | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - |
+    |frame | 9 | 1 | 14 | 10 |  - | 13 | 8 | 15 | - | 0 | 5 | 4 | - | - | 3 | 2 |
+    |ref bit | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+      1. 0xE12C 
+      2. 0x3A9D 
+      3. 0xA9D9 
+      4. 0x7001 
+      5. 0xACA1
+
+      Hints: 
+      * page size = 4096 bytes, i.e. 2^12 bytes, so the left 4=16-12 bits of address are used for pages
+      * page size = frame size
+      * logical address = page number * page size + offset
+      * physical address = frame number * frame size + offset
+
+   2. (5%) Using the above addresses as a guide, provide an example of a logical address (in hexadecimal) that results in a page fault.
+   3. (5%) From what set of page frames will the LRU page-replacement algorithm choose in resolving a page fault?
+
+   Hints:
+   The reference bit can NOT tell which page is referenced before which.
+
+4. (10%) Find the number of pages allocated to the following three processes with proportional allocation from 100 pages. Suppose left pages are kept as free pages.
+   1. process A of 20KB
+   2. process B of 30KB
+   3. process C of 50KB
+
+   Hints:
+   * memory A : memory B: memory C = process A : process B : process C
+   * memory A + memory B + memory C <= total pages
+
+## References
 
 * Linux
   * [Memory](https://www.win.tue.nl/~aeb/linux/lk/lk-9.html)
@@ -55,8 +104,6 @@ _References_
 * [BCC - Tools for BPF-based Linux IO analysis, networking, monitoring, and more](https://github.com/iovisor/bcc)
 * [OSC10e](https://github.com/greggagne/osc10e)
 
-
-**Youtube Videos**
 
 
 
