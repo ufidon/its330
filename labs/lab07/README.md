@@ -6,7 +6,7 @@ Course materials and demos for labs
 
 ### 1. Description
 
-In this lab,  practice memory allocation using Windows API and C#.
+In this lab,  practice memory allocation using Windows API and investigate the memory allocation of .Net framework in C#.
 
 ### 2. Tasks (40%)
 
@@ -26,7 +26,7 @@ In this lab,  practice memory allocation using Windows API and C#.
    2. (6%) If we add TLBs, and 75 percent of all page-table references are found in the TLBs, what is the effective memory reference time? (Assume that finding a page-table entry in the TLBs takes 2 nanoseconds, if the entry is present.) 
    
       Hints:
-      1. the effective memory reference time = 75% access with TLB hit + 25% access with TLB miss
+      1. the effective memory reference time = page hit rate * access time with TLB hit + page miss rate * access time with TLB miss
       2. access with TLB hit = TLB access + memory access
       3. access with TLB miss = TLB access + memory access (find the page entry and load into TLB) + memory access
 4. (12%, 4% each)Consider the following segment table: 
