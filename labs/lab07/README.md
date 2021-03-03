@@ -65,6 +65,10 @@ In this lab,  practice memory allocation using Windows API and investigate the m
    * physical address = frame number x frame size + offset
    * frame size = page size
 
+**Demo video**
+
+* [Lab07 Memory allocation](https://youtu.be/tNmcxsW4jp8)
+
 ## References
 * Linux
   * [mmap](http://man7.org/linux/man-pages/man2/mmap.2.html)
