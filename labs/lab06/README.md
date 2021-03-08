@@ -12,6 +12,11 @@ In this lab,  practice deadlock in [the Philosopher Dining Problem](https://en.w
 
 ### 3. Review questions (50%)
 1. Given the following snapshot of a system, answer the questions below using the banker's algorithm.
+
+   Hint:
+   * total = allocation + available
+   * need = max - allocation
+
    | process | allocation | max  | available   |
    | ------- | ---------- | ---  | ---------   |
    |         | A B C D | A B C D | A B C D |
@@ -22,7 +27,7 @@ In this lab,  practice deadlock in [the Philosopher Dining Problem](https://en.w
    | P4      | 0 0 1 4 | 0 6 5 6 | |
    
    1. (10%) What is the content of matrix need?
-   2. (20%) Is the system in a safe state?
+   2. (20%) Is the system in a safe state? Hint: find a executable order of all processes.
    3. (20%) If a request from process P1 arrives for (0,4,2,0), can the request be granted immediately?
 
 **Demo video**

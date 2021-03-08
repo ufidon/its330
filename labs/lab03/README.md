@@ -24,6 +24,7 @@ Show your calculation steps for each question, without steps will be graded 0.
    1. (10%) two processing cores.
    2. (10%) four processing cores.
   
+   Hint: <!-- $ speedup = \frac{1}{serial\ portion + \frac{parallel\ portion}{number\ of\ computing\ units}} $ --> <img style="transform: translateY(0.1em); background: white;" src="..\..\svg\rO3VQW49Za.svg">
 
 2. (40%)Suppose that the following processes arrive for execution at the times indicated. Each process will run for the amount of time (burst time) listed. In answering the questions, use nonpreemptive scheduling, and base all decisions on the information you have at the time the decision must be made.
 

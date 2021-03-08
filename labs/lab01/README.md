@@ -31,9 +31,14 @@ sudo apt-get install openjdk-11-jdk mono-mcs
 
 3. (20%) Review questions
    1. (10%) A [binary prefix](https://en.wikipedia.org/wiki/Binary_prefix) is a unit prefix for multiples of units in data processing, data transmission, and digital information, notably the bit and the byte, to indicate multiplication by a power of 2. *Fill in the following blanks and show your calculation.*
+
+    Hint: Refer to [Binary prefix](https://en.wikipedia.org/wiki/Binary_prefix) or use online unit converters such as [storage unit converter](https://www.calculatorsoup.com/calculators/conversions/computerstorage.php).
+
       1. (5%, %1 for each) A ISO file of size 4.253GB = ?MB = ?KB = ?Gb = ?TB = ?B
-      2. (5%, %1 for each) In the specification of [USB 3.1](https://en.wikipedia.org/wiki/USB_3.0), USB 3.1 Gen 2 – SuperSpeed+, new 10 Gbit/s data rate over 1 lane using 128b/132b encoding. Its effective data rate can be up to 1212 MB/s = ?GB/s= ?GB/min= ?KB/s= ?Mb/min= ?bps
+      2. (5%, %1 for each) In the specification of [USB 3.1](https://en.wikipedia.org/wiki/USB_3.0), USB 3.1 Gen 2 – SuperSpeed+, new 10 Gbit/s data rate over 1 lane using 128b/132b encoding. Its effective data rate can be up to 1212 MB/s = ?GB/s= ?GB/min= ?KB/s= ?Mb/min= ?bps  Hint: use online [Data Transfer Rate Converter](https://www.thecalculatorsite.com/conversions/datarate.php)
    2. (10%) Rank the following storage systems from slowest to fastest, show your references: a. Hard-disk drives b. Registers c. Optical disk d. Main memory e. Nonvolatile memory f. Magnetic tapes g. Cache
+
+   Hint: refer to [Memory hierarchy](https://en.wikipedia.org/wiki/Memory_hierarchy)
 
 **Demo video**
 * [Lab01: Setup lab environment](https://youtu.be/vtiv_vyaKk0)
