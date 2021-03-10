@@ -105,8 +105,10 @@ def FCFS(df):
 
     sdf.loc[:,'Turnaround time'] = sdf['Burst Time'] + sdf['Waiting time']
     print('All processes finished:')
-    print(sdf.loc[:, ['Waiting time', 'Turnaround time', 'Gantt chart']].sort_index())
+    print(sdf.loc[:, ['Arrival Time','Burst Time','Priority','Waiting time', 'Turnaround time', 'Gantt chart']].sort_index())
+    print("Total waiting time: ", sdf['Waiting time'].sum())
     print("Average waiting time: ", sdf['Waiting time'].sum()/nqs)
+    print("Total turnaround time: ", sdf['Turnaround time'].sum())
     print("Average turnaround time: ", sdf['Turnaround time'].sum()/nqs)
 
 
@@ -143,6 +145,7 @@ def SJF(df, preemptive=False):
 
     cpu = 0
     oncpu = 0
+    cpufree = True
     while not all(sdf['Done']):
         if debug:
             print('\nCPU time: {0}'.format(cpu))
@@ -157,9 +160,11 @@ def SJF(df, preemptive=False):
         # arrived
         sdf.loc[sdf['Arrival Time'] == cpu, 'Arrived'] = True
         # find the shortest remaining time again
-        if any(sdf['Arrival Time'] == cpu) and preemptive:
-            sdf.sort_values(by=['Arrived', 'Remain Time'], ascending = [False, True], inplace=True)
-            sdf['Order'] = range(nqs)
+        if any(sdf['Arrival Time'] == cpu):
+            if preemptive or (not preemptive and cpufree):
+                sdf.sort_values(by=['Arrived', 'Remain Time'], ascending = [False, True], inplace=True)
+                sdf['Order'] = range(nqs)
+
 
         # for alignment
         sdf.loc[sdf['Done'] == True, 'Gantt chart'] += '-'
@@ -168,6 +173,7 @@ def SJF(df, preemptive=False):
         if sdf.iat[oncpu, clabel.index('Arrived')] == True and sdf.iat[oncpu, clabel.index('Done')] == False:
             sdf.iat[oncpu, clabel.index('Gantt chart')] += 'x'
             sdf.iat[oncpu, clabel.index('Remain Time')] -= 1
+            cpufree = False
 
             if oncpu < nqs:
                 selection = (sdf['Order'] > oncpu) & (sdf['Arrived'] == True)
@@ -179,9 +185,7 @@ def SJF(df, preemptive=False):
 
             if sdf.iat[oncpu, clabel.index('Remain Time')] == 0:
                 sdf.iat[oncpu, clabel.index('Done')] = True
-                if not preemptive:
-                    sdf.sort_values(by=['Arrived', 'Remain Time'], ascending = [False, True], inplace=True)
-                    sdf['Order'] = range(nqs)
+                cpufree = True
 
                 oncpu += 1
         if debug:
@@ -191,8 +195,10 @@ def SJF(df, preemptive=False):
 
     sdf.loc[:,'Turnaround time'] = sdf['Burst Time'] + sdf['Waiting time']
     print('All processes finished:')
-    print(sdf.loc[:, ['Waiting time', 'Turnaround time', 'Gantt chart']].sort_index())
+    print(sdf.loc[:, ['Arrival Time','Burst Time','Priority','Waiting time', 'Turnaround time', 'Gantt chart']].sort_index())
+    print("Total waiting time: ", sdf['Waiting time'].sum())
     print("Average waiting time: ", sdf['Waiting time'].sum()/nqs)
+    print("Total turnaround time: ", sdf['Turnaround time'].sum())
     print("Average turnaround time: ", sdf['Turnaround time'].sum()/nqs)
 
 
@@ -230,6 +236,7 @@ def PP(df, preemptive=False):
 
     cpu = 0
     oncpu = 0
+    cpufree = True
     while not all(sdf['Done']):
         if debug:
             print('\nCPU time: {0}'.format(cpu))
@@ -244,9 +251,10 @@ def PP(df, preemptive=False):
         # arrived
         sdf.loc[sdf['Arrival Time'] == cpu, 'Arrived'] = True
         # find the highest priority again
-        if any(sdf['Arrival Time'] == cpu) and preemptive:
-            sdf.sort_values(by=['Arrived', 'Priority'], ascending = [False, False], inplace=True)
-            sdf['Order'] = range(nqs)
+        if any(sdf['Arrival Time'] == cpu):
+            if preemptive or (not preemptive and cpufree):
+                sdf.sort_values(by=['Arrived', 'Priority'], ascending = [False, False], inplace=True)
+                sdf['Order'] = range(nqs)
 
         # for alignment
         sdf.loc[sdf['Done'] == True, 'Gantt chart'] += '-'
@@ -255,6 +263,7 @@ def PP(df, preemptive=False):
         if sdf.iat[oncpu, clabel.index('Arrived')] == True and sdf.iat[oncpu, clabel.index('Done')] == False:
             sdf.iat[oncpu, clabel.index('Gantt chart')] += 'x'
             sdf.iat[oncpu, clabel.index('Remain Time')] -= 1
+            cpufree = False
 
             if oncpu < nqs:
                 selection = (sdf['Order'] > oncpu) & (sdf['Arrived'] == True)
@@ -266,6 +275,7 @@ def PP(df, preemptive=False):
 
             if sdf.iat[oncpu, clabel.index('Remain Time')] == 0:
                 sdf.iat[oncpu, clabel.index('Done')] = True
+                cpufree = True
                 
                 # if not preemptive:
                 #     sdf.iat[oncpu, clabel.index('sPriority')] = -1 # out of schedule
@@ -280,8 +290,10 @@ def PP(df, preemptive=False):
 
     sdf.loc[:,'Turnaround time'] = sdf['Burst Time'] + sdf['Waiting time']
     print('All processes finished:')
-    print(sdf.loc[:, ['Waiting time', 'Turnaround time', 'Gantt chart']].sort_index())
+    print(sdf.loc[:, ['Arrival Time','Burst Time','Priority','Waiting time', 'Turnaround time', 'Gantt chart']].sort_index())
+    print("Total waiting time: ", sdf['Waiting time'].sum())
     print("Average waiting time: ", sdf['Waiting time'].sum()/nqs)
+    print("Total turnaround time: ", sdf['Turnaround time'].sum())
     print("Average turnaround time: ", sdf['Turnaround time'].sum()/nqs)
 
 def RR(df, qu=2):
@@ -367,16 +379,18 @@ def RR(df, qu=2):
 
     sdf.loc[:,'Turnaround time'] = sdf['Burst Time'] + sdf['Waiting time']
     print('All processes finished:')
-    print(sdf.loc[:, ['Waiting time', 'Turnaround time', 'Gantt chart']].sort_index())
+    print(sdf.loc[:, ['Arrival Time','Burst Time','Priority','Waiting time', 'Turnaround time', 'Gantt chart']].sort_index())
+    print("Total waiting time: ", sdf['Waiting time'].sum())
     print("Average waiting time: ", sdf['Waiting time'].sum()/nqs)
+    print("Total turnaround time: ", sdf['Turnaround time'].sum())
     print("Average turnaround time: ", sdf['Turnaround time'].sum()/nqs)
 
 if __name__ == '__main__':
     # test 
     df = getScene()
-    FCFS(df)
-    SJF(df)
-    SJF(df, True)
-    PP(df)
-    PP(df, True)
-    RR(df, 2)
+    FCFS(df.copy())
+    SJF(df.copy())
+    SJF(df.copy(), True)
+    PP(df.copy())
+    PP(df.copy(), True)
+    RR(df.copy(), 2)
