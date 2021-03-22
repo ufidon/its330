@@ -90,13 +90,17 @@ def mWorstFit(memblocks, processes):
 if __name__ == '__main__':
 	# test code
 	
-	memblocks = [100, 500, 500, 200]
-	processes = [417, 112, 426, 95,95] 
+	#memblocks = [100, 500, 500, 200]
+	#processes = [417, 112, 300, 95, 95] 
 
 	if len(sys.argv)>3 and ":" in sys.argv:
 		si = sys.argv.index(":")
 		memblocks = list(map(int, sys.argv[1:si]))
 		processes = list(map(int, sys.argv[si+1:]))
+	else:
+		memblocks = [int(x) for x in input('Enter memory blocks, separate by blanks:\n').split()]
+		processes = [int(x) for x in input('Enter processes, separate by blanks:\n').split()]
+    
 	print("memory:  ", memblocks)
 	print("process: ", processes)
 	print("\nOne memory block can NOT hold more than one processes:")

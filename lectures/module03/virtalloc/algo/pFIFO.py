@@ -11,6 +11,7 @@
 # 1. https://www.geeksforgeeks.org/page-replacement-algorithms-in-operating-systems/
 # 2. https://stackoverflow.com/questions/38086774/does-the-for-in-loop-construct-preserve-order
 import sys
+import re
 
 def FIFO(pagenum, processes):
 	hits = 0
@@ -18,6 +19,9 @@ def FIFO(pagenum, processes):
 	pages = [' ']*pagenum
 	i = 0
 	fifo = []
+
+	#print("Number of frames: ",pagenum)
+	#print("Page references: ",processes, '\n')
 
 	for p in processes: 
 		# If p is not present in Pages 
@@ -44,15 +48,25 @@ def FIFO(pagenum, processes):
 
 if __name__ == '__main__':
 	# test code 
-	pagenum = 4
-	#processes = [ 7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2] 
-	processes = ['h', 'a', 'b', 'c', 'a', 'd', 'a', 'e', 'c', 'd', 'a', 'd', 'c']
+	framenum = 4
+	#pagerefs = [ 7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2] 
+	#pagerefs = ['h', 'a', 'b', 'c', 'a', 'd', 'a', 'e', 'c', 'd', 'a', 'd', 'c']
 
-	# usage: pFIFO.py pagenum processes
+	refasletter = False
+	# usage: pFIFO.py framenum pagerefs
 	if len(sys.argv) > 1:
-		pagenum = int(sys.argv[1])
-		processes = sys.argv[2:]
+		framenum = int(sys.argv[1])
+		pagerefs = sys.argv[2:]
+	else:
+		framenum = int(input('Enter the number of frames: '))
+		pagerefs = [int(x) for x in input('Enter the page reference sequences, separate by spaces:\n').split()]
+		refasletter = True if re.search(r'[y|Y]', input('Represent page refs as letters(Yes|No): ')) else False
+		if refasletter:
+			lpagerefs = [chr(x+ord('a')) for x in pagerefs]
+			print('Pageref as letters:\n',list(zip(pagerefs,lpagerefs)))
+			pagerefs = lpagerefs
 
 	misses = 0
 	hits = 0
-	(misses,hits)=FIFO(pagenum, processes)
+	print('\nAlgorithm started...\n')
+	(misses,hits)=FIFO(framenum, pagerefs)
