@@ -64,6 +64,13 @@ In this lab, practice virtual memory allocation using Windows API and C#.
    * memory A : memory B: memory C = process A : process B : process C
    * memory A + memory B + memory C <= total pages
 
+5. Reading exercises(Optional)
+   1. Read the article [Virtual memory](https://en.wikipedia.org/wiki/Virtual_memory), write a summary about 
+      1. the advantages and disadvantages of virtual memory, 
+      2. the steps that operating systems used to handle page fault.
+   2. Read the article [Thrashing](https://en.wikipedia.org/wiki/Thrashing_(computer_science)), write a summary about the causes and solutions of thrashing.
+   3. Read the article [Bélády's anomaly](https://en.wikipedia.org/wiki/B%C3%A9l%C3%A1dy%27s_anomaly), write a summary about whether Belady's anomaly happens in FIFO, OPT and LRU.
+
 ## References
 
 * Linux
