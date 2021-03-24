@@ -71,7 +71,7 @@ In this lab, practice virtual memory allocation using Windows API and C#.
    2. (3%) Read the article [Thrashing](https://en.wikipedia.org/wiki/Thrashing_(computer_science)), write a summary about the causes and solutions of thrashing.
    3. (3%) Read the article [Bélády's anomaly](https://en.wikipedia.org/wiki/B%C3%A9l%C3%A1dy%27s_anomaly), write a summary about whether Belady's anomaly happens in FIFO, OPT and LRU.
 
-   You may refer to Google search, or [OSC9e Chapter 9](https://www.os-book.com/OS9/slide-dir/index.html), or [OSC10e Chapter 10](https://www.os-book.com/OS10/slide-dir/index.html) for further information.
+   You may refer to [OSC9e Chapter 9](https://www.os-book.com/OS9/slide-dir/index.html), or [OSC10e Chapter 10](https://www.os-book.com/OS10/slide-dir/index.html) for further information.
 
 ## References
 
