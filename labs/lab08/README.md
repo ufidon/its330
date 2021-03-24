@@ -7,10 +7,10 @@ Course materials and demos for labs
 
 In this lab, practice virtual memory allocation using Windows API and C#.
 
-### 2. Tasks (20%)
+### 2. Tasks (10%)
 
-1. Practice reserving and committing virtual memory with template [rescom-mem.c](./code/win/rescom-mem.c) in Windows API.
-2. Investigate C# program memory allocation with template [vmem.cs](./code/cs/vmem.cs) in C#.
+1. (5%) Practice reserving and committing virtual memory with template [rescom-mem.c](./code/win/rescom-mem.c) in Windows API.
+2. (5%) Investigate C# program memory allocation with template [vmem.cs](./code/cs/vmem.cs) in C#.
 
 ### 3. Review questions (80%)
 1. (10%) In demanding paging system, effective access time is directly proportional to the page-fault rate. If the page fault rate is 0.1%, i.e., one access out of 1,000 causes a page fault, find the slowdown (or performance degradation) percentage caused by page faults. Given,
@@ -64,12 +64,14 @@ In this lab, practice virtual memory allocation using Windows API and C#.
    * memory A : memory B: memory C = process A : process B : process C
    * memory A + memory B + memory C <= total pages
 
-5. Reading and writing(Optional)
-   1. Read the article [Virtual memory](https://en.wikipedia.org/wiki/Virtual_memory), write a summary about 
+5. (10%) Reading and writing
+   1. (4%) Read the article [Virtual memory](https://en.wikipedia.org/wiki/Virtual_memory), write a summary about 
       1. the advantages and disadvantages of virtual memory, 
       2. the steps that operating systems used to handle page fault.
-   2. Read the article [Thrashing](https://en.wikipedia.org/wiki/Thrashing_(computer_science)), write a summary about the causes and solutions of thrashing.
-   3. Read the article [Bélády's anomaly](https://en.wikipedia.org/wiki/B%C3%A9l%C3%A1dy%27s_anomaly), write a summary about whether Belady's anomaly happens in FIFO, OPT and LRU.
+   2. (3%) Read the article [Thrashing](https://en.wikipedia.org/wiki/Thrashing_(computer_science)), write a summary about the causes and solutions of thrashing.
+   3. (3%) Read the article [Bélády's anomaly](https://en.wikipedia.org/wiki/B%C3%A9l%C3%A1dy%27s_anomaly), write a summary about whether Belady's anomaly happens in FIFO, OPT and LRU.
+
+   You may refer to Google search, or [OSC9e Chapter 9](https://www.os-book.com/OS9/slide-dir/index.html), or [OSC10e Chapter 10](https://www.os-book.com/OS10/slide-dir/index.html) for further information.
 
 ## References
 

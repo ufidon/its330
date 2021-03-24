@@ -1,0 +1,13 @@
+4. Yes.
+Explanation:
+The access flag string -rw-rw-rw- from left to right:
+-: file type, regular file
+rw-: owner access rights: read, write, no execute
+rw-: group access rights: read, write, no execute
+rw-: others access rights: read, write, no execute, Pense belongs to others, so he can
+read/write this file. These access rights do NOT let others rename/delete key.md5
+However, here is an implicit assumption — the access rights of the folder containing
+key.md5 must be set properly, the minimum access right on the folder is executable
+by others. 
+6. 68753047648KB
+7. 32

@@ -1,21 +1,33 @@
 # its330
 Course materials and demos for labs
 
-
 ## Lab10: file system investigation
 
-
-_Description_
+### 1. Description
 
 In this lab,  investigate popular [file systems](./lab10-demo.txt).
 
-
-_Tasks_
+### 2. Tasks
 
 1. see [lab10-demo](./lab10-demo.txt)
 
 
-_References_
+### 3. Review questions
+1. Read articles [File attribute](https://en.wikipedia.org/wiki/File_attribute) and [Computer file](https://en.wikipedia.org/wiki/Computer_file), write a summary about file attributes and file operations.
+2. Read article [File Access Methods in Operating System](https://www.geeksforgeeks.org/file-access-methods-in-operating-system/), write a summary about the difference between the two file accesses: sequential access vs direct access ( or relative access).
+3. List out five file system operations that are to be executed on a directory. Refer to [OSC9e: Chapter 11](https://www.os-book.com/OS9/slide-dir/index.html) or [OSC10e: Chapter 13](https://www.os-book.com/OS10/slide-dir/index.html).
+4. Explain the access rights of the following users on the file ‘key.md5’ base on the output of command ‘ls -l key.md5’: 
+
+   -rw-rw-rw- 1 trump whitehouse 38 Oct 15 2018 key.md5
+
+   It is know that the group ‘whitehouse={Trump, Mick, Kellyanne, Johnny, Jared}’. Can Pense access key.md5?
+
+   Refer to: [File Permissions](https://help.ubuntu.com/community/FilePermissions), or [OSC9e: Chapter 11](https://www.os-book.com/OS9/slide-dir/index.html), or [OSC10e: Chapter 13](https://www.os-book.com/OS10/slide-dir/index.html).
+5. Describe indexed allocation of disk space. Refer to [Allocation](https://en.wikibooks.org/wiki/Operating_System_Design/File_Systems/Allocation), or [OSC9e: Chapter 12](https://www.os-book.com/OS9/slide-dir/index.html), or [OSC10e: Chapter 14](https://www.os-book.com/OS10/slide-dir/index.html).
+6. Consider a file system that uses inodes to represent files. Disk blocks are 8 KB in size, and a pointer to a disk block requires 4 bytes.  This file system has 12 direct disk blocks, as well as single, double, and triple indirect disk blocks. What is the maximum size of a file that can be stored in this file system? Refer to [OSC9e: Chapter 12](https://www.os-book.com/OS9/slide-dir/index.html), or [OSC10e: Chapter 14](https://www.os-book.com/OS10/slide-dir/index.html). 
+7. A 1-TB disk with 4-KB blocks requires how many MB to store its bit map. 
+
+## References
 
 * _Windows
 	* [TSK Tool Overview](https://wiki.sleuthkit.org/index.php?title=TSK\_Tool\_Overview)
