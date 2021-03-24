@@ -64,7 +64,7 @@ In this lab, practice virtual memory allocation using Windows API and C#.
    * memory A : memory B: memory C = process A : process B : process C
    * memory A + memory B + memory C <= total pages
 
-5. Reading exercises(Optional)
+5. Reading and writing(Optional)
    1. Read the article [Virtual memory](https://en.wikipedia.org/wiki/Virtual_memory), write a summary about 
       1. the advantages and disadvantages of virtual memory, 
       2. the steps that operating systems used to handle page fault.
