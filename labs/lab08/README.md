@@ -73,6 +73,11 @@ In this lab, practice virtual memory allocation using Windows API and C#.
 
    You may refer to [OSC9e Chapter 9](https://www.os-book.com/OS9/slide-dir/index.html), or [OSC10e Chapter 10](https://www.os-book.com/OS10/slide-dir/index.html) for further information.
 
+**Demo video**
+
+* [Lab08 Page replacement algorithms](https://youtu.be/ufktq7cHbd8)
+
+
 ## References
 
 * Linux
