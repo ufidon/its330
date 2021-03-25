@@ -16,10 +16,11 @@ In this lab,  practice file operations with file system interfaces below:
 
 ### 3. Review questions
 1. Read articles [Hard disk drive](https://en.wikipedia.org/wiki/Hard_disk_drive) and [Solid-state drive](https://en.wikipedia.org/wiki/Solid-state_drive), answer questions below:
-   1.  What are the two major factors that affect the performance of magnetic disks?
+   1.  What are the major factors that affect the performance of magnetic disks?
    2.  Do solid-state disks suffer from these factors?
 
-2. Read article [Disk Scheduling Algorithms](https://www.geeksforgeeks.org/disk-scheduling-algorithms/) and write a summary about these disk scheduling algorithms: FIFS, SSTF, SCAN, C-SCAN, LOOK, C-LOOK.
+2. Read article [Disk Scheduling Algorithms](https://www.geeksforgeeks.org/disk-scheduling-algorithms/) and write a summary about these disk scheduling algorithms: FCFS, SSTF, SCAN, C-SCAN, LOOK, C-LOOK.
+
 3. Find the total head movements in cylinder for disk scheduling algorithms FCFS, SSTF, SCAN, C-SCAN, LOOK and C-LOOK with the following disk queue with requests for I/O to blocks on cylinders: 
 
    98, 183, 37, 122, 14, 124, 65, 67 
