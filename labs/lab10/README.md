@@ -5,11 +5,13 @@ Course materials and demos for labs
 
 ### 1. Description
 
-In this lab,  investigate popular [file systems](./lab10-demo.txt).
+In this lab,  investigate popular file system FAT/FAT32/NTFS on Windows using [sleuthkit](https://www.sleuthkit.org/sleuthkit/).
 
 ### 2. Tasks
 
-1. see [lab10-demo](./lab10-demo.txt)
+1. Download and unarchive [sleuthkit](https://www.sleuthkit.org/sleuthkit/)
+2. Add the bin folder of sleuthkit to the system environmental variable PATH, verify sleuthkit commands can be executed anywhere from a Command prompt or Powershell
+3. Using Windows disk manager, create a 500MB virtual disk with GPT table, partition it into two equal partitions, one formatted as  
 
 
 ### 3. Review questions
@@ -28,14 +30,15 @@ In this lab,  investigate popular [file systems](./lab10-demo.txt).
 7. A 1-TB disk with 4-KB blocks requires how many MB to store its bit map. 
 
 ## References
-
 * _Windows
 	* [TSK Tool Overview](https://wiki.sleuthkit.org/index.php?title=TSK\_Tool\_Overview)
+  	* [sleuthkit](https://www.sleuthkit.org/sleuthkit/)
 	* [FAT](https://wiki.osdev.org/FAT)
 	* [exFAT file system specification](https://docs.microsoft.com/en-us/windows/win32/fileio/exfat-specification)
 	* [Description of the FAT32 File System](https://support.microsoft.com/en-us/help/154997/description-of-the-fat32-file-system)
 	* [Microsoft Extensible Firmware Initiative FAT32 File System Specification](http://www.cs.fsu.edu/~cop4610t/assignments/project3/spec/fatspec.pdf)
 	* [NTFS overview](https://docs.microsoft.com/en-us/windows-server/storage/file-server/ntfs-overview)
+	* [Security auditing](https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/security-auditing-overview)
 * _Linux_
   * [Create blank disk image for file storage](https://askubuntu.com/questions/667291/create-blank-disk-image-for-file-storage)
   * [Open Source: NTFS-3G](https://www.tuxera.com/community/open-source-ntfs-3g/)
