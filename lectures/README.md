@@ -6,7 +6,7 @@ Course materials and demos for lectures
 * Module02: Computing resource management
 * Module03: Non-persistent Storage resource management
 * Module04: Persistent storage management
-* Module05: I/O system
+* Module05: I/O system and network
 * Module06: Protection & security
 
 
