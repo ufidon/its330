@@ -40,6 +40,10 @@ In this lab,  practice file operations with file system interfaces below:
    Refer to: [File Permissions](https://help.ubuntu.com/community/FilePermissions), or [OSC9e: Chapter 11](https://www.os-book.com/OS9/slide-dir/index.html), or [OSC10e: Chapter 13](https://www.os-book.com/OS10/slide-dir/index.html).
 
 
+**Demo video**
+
+* [Lab09: File system API](https://youtu.be/LmzMkvZf-LM)
+
 ## References
 
 * _Windows
