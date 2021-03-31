@@ -34,7 +34,7 @@ In this lab,  investigate popular file system FAT/FAT32/NTFS/ext4/minix on Windo
 3. (10%) How many MB does a 1-TB disk with 4-KB blocks require to store its bit map? Refer to [OSC10e: Chapter 14](https://www.os-book.com/OS10/slide-dir/index.html)
 
 ## References
-* _Windows
+* _Windows_
 	* [TSK Tool Overview](https://wiki.sleuthkit.org/index.php?title=TSK\_Tool\_Overview)
   	* [sleuthkit](https://www.sleuthkit.org/sleuthkit/)
 	* [FAT](https://wiki.osdev.org/FAT)

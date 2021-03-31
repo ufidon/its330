@@ -1,28 +1,26 @@
 # its330
 Course materials and demos for labs
 
-
 ## Lab11: Networking and I/O programming
-
 
 ### 1. Description
 
-In this lab,  practice basic socket-programming in Ubuntu/Windows/C# (./lab11-demo.txt).
+In this lab,  practice basic socket-programming in Windows API and C#.
+
+### 2. Tasks (40%)
+
+1. (20%) Practice basic socket-programming in Windows API with template [client.c](./code/win/client.c) and [server.c](./code/win/server.c)
+2. (20%) Practice basic socket-programming in C# with template [csClient.cs](./code/cs/csClient.cs) and [csServer.cs](./code/cs/csServer.cs)
 
 
-### 2. Tasks
-
-1. see [lab11-demo](./lab11-demo.txt)
-
-
-### 3. Review questions
-1. Read articles [Asynchronous I/O](https://en.wikipedia.org/wiki/Asynchronous_I/O) and [Interrupt](https://en.wikipedia.org/wiki/Interrupt), write a summary about polling(synchronous) I/O vs. interrupt(asynchronous) I/O. You may refer to [OSC9e: Chapter 13](https://www.os-book.com/OS9/slide-dir/index.html), or [OSC10e: Chapter 12](https://www.os-book.com/OS10/slide-dir/index.html) for additional information.
-2. Read article [Direct memory access (DMA)](https://en.wikipedia.org/wiki/Direct_memory_access), write a summary on the steps in a DMA transfer. You may refer to [OSC9e: Chapter 13](https://www.os-book.com/OS9/slide-dir/index.html), or [OSC10e: Chapter 12](https://www.os-book.com/OS10/slide-dir/index.html) for additional information.
-3. Describe the life cycle of an I/O request based on the article [Example I/O Request - An Overview](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/example-i-o-request---an-overview). You may refer to [OSC9e: Chapter 13](https://www.os-book.com/OS9/slide-dir/index.html), or [OSC10e: Chapter 12](https://www.os-book.com/OS10/slide-dir/index.html) for additional information.
+### 3. Review questions (60%)
+1. (20%) Read articles [Asynchronous I/O](https://en.wikipedia.org/wiki/Asynchronous_I/O) and [Interrupt](https://en.wikipedia.org/wiki/Interrupt), write a summary about polling(synchronous) I/O vs. interrupt(asynchronous) I/O. You may refer to [OSC9e: Chapter 13](https://www.os-book.com/OS9/slide-dir/index.html), or [OSC10e: Chapter 12](https://www.os-book.com/OS10/slide-dir/index.html) for additional information.
+2. (20%) Read article [Direct memory access (DMA)](https://en.wikipedia.org/wiki/Direct_memory_access), write a summary on the steps in a DMA transfer. You may refer to [OSC9e: Chapter 13](https://www.os-book.com/OS9/slide-dir/index.html), or [OSC10e: Chapter 12](https://www.os-book.com/OS10/slide-dir/index.html) for additional information.
+3. (20%) Describe the life cycle of an I/O request based on the article [Example I/O Request - An Overview](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/example-i-o-request---an-overview). You may refer to [OSC9e: Chapter 13](https://www.os-book.com/OS9/slide-dir/index.html), or [OSC10e: Chapter 12](https://www.os-book.com/OS10/slide-dir/index.html) for additional information.
 
 ## References
 
-* _Windows
+* _Windows_
   * [Getting Started with Winsock](https://docs.microsoft.com/en-us/windows/win32/winsock/getting-started-with-winsock)
   * [Complete Winsock Client Code](https://docs.microsoft.com/en-us/windows/win32/winsock/complete-client-code)
   * [Complete Winsock Server Code](https://docs.microsoft.com/en-us/windows/win32/winsock/complete-server-code)
