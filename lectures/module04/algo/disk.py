@@ -6,10 +6,52 @@
 
 # Refs: 
 # 1. https://www.geeksforgeeks.org/partition-allocation-methods-in-memory-management/
+# 2. https://misc.flogisoft.com/bash/tip_colors_and_formatting
 
 import sys
 import numpy as np
 import pandas as pd
+
+class colornformat:
+   FPURPLE = '\033[95m'
+   FCYAN = '\033[96m'
+   FDARKCYAN = '\033[36m'
+   FBLUE = '\033[94m'
+   FGREEN = '\033[92m'
+   FYELLOW = '\033[93m'
+   FRED = '\033[91m'
+   FWHITE = '\033[97m'
+   FBLACK = '\033[30m'
+   FMAGENTA = '\033[35m'
+
+   BLIGHTMAGENTA = '\033[105m'
+   BCYAN = '\033[46m'
+   BLIGHTCYAN = '\033[106m'
+   BBLUE = '\033[44m'
+   BGREEN = '\033[42m'
+   BYELLOW = '\033[43m'
+   BRED = '\033[41m'
+   BWHITE = '\033[107m'
+   BBLACK = '\033[40m'
+   BMAGENTA = '\033[45m'
+
+   BOLD = '\033[1m'
+   UNDERLINE = '\033[4m'
+   STRIKEOUT = '\033[9m'
+   DIM = '\033[2m'
+   BLINK = '\033[5m'
+   INVERT = '\033[7m'
+   HIDDEN = '\033[8m'
+
+   RBOLD = '\033[21m'
+   RUNDERLINE = '\033[24m'
+   RSTRIKEOUT = '\033[29m'
+   RDIM = '\033[22m'
+   RBLINK = '\033[25m'
+   RINVERT = '\033[27m'
+   RHIDDEN = '\033[28m'
+
+   END = '\033[0m'
 
 # ncyls: number of cylinders of the disk, so the available cylinder numbers are 0 to ncyls-1
 # lastcyl: last cylinder the header resided
@@ -17,22 +59,56 @@ import pandas as pd
 # reqs: the queue of I/O request, sequence of cylinder number
 
 def tidyinput(ncyls, curcyl, reqs, lastcyl=0):
+	lreqs = reqs.copy()
 	if (len(reqs) > 0 and ncyls > 0 and ncyls > max(reqs) 
 		and lastcyl>=0 and lastcyl < ncyls and curcyl>= 0 
 		and curcyl < ncyls and min(reqs)>= 0 
 		and len(set(reqs)) == len(reqs)):
 		return True
 	else:
+		print('tidyinput.lreqs: ', reqs)
 		print("Invalid inputs, input again.")
 		return False
 
+def cfprint(ncyls, curcyl, reqs, lastcyl, sorted = False):
+	slcyls = str(ncyls-1)
+	scurcyl = str(curcyl)
+	slastcyl = str(lastcyl)
+	sreqs = ' '.join([str(r) for r in reqs])
+
+	cfstr = colornformat.DIM + '0' + colornformat.RDIM + ' ' +\
+			colornformat.STRIKEOUT + slastcyl + ' ' + colornformat.RSTRIKEOUT + \
+			colornformat.BLINK + scurcyl + ' ' + colornformat.RBLINK + \
+			sreqs + ' ' + \
+			colornformat.DIM + slcyls + \
+			colornformat.END
+	if sorted:
+		reqs.insert(0, lastcyl)
+		reqs.insert(0, curcyl)
+		reqs.sort()
+
+		strmid=''
+		for r in reqs:
+			if r == lastcyl:
+				strmid += colornformat.STRIKEOUT + str(r) + colornformat.RSTRIKEOUT + ' '
+			elif r == curcyl:
+				strmid += colornformat.BLINK + str(r) + ' ' + colornformat.RBLINK
+			else:
+				strmid += str(r) + ' '
+		
+		cfstr = colornformat.DIM + '0' + ' ' + colornformat.RDIM + \
+				strmid + \
+				colornformat.DIM + slcyls + \
+				colornformat.END
+	print(cfstr)
 
 def FCFS(ncyls, curcyl, reqs, lastcyl=0):
 	if not tidyinput(ncyls, lastcyl, reqs, curcyl):
-		return
+		exit(1)
 
 	df = pd.DataFrame(columns=['from','to','moved'])
 
+	oreqs = reqs.copy()
 	reqs.insert(0, curcyl)
 	nreqs = len(reqs)
 
@@ -40,16 +116,19 @@ def FCFS(ncyls, curcyl, reqs, lastcyl=0):
 		df.loc[len(df.index)] = [reqs[i], reqs[i+1], np.abs(reqs[i+1]-reqs[i])]
 
 	print('\nFCFS scheduling:')
+	cfprint(ncyls, curcyl, oreqs, lastcyl)
 	print(df)
 	total = df['moved'].sum()
 	print("Total movements: ", total)
 
 def SSTF(ncyls, curcyl, reqs, lastcyl=0):
 	if not tidyinput(ncyls, lastcyl, reqs, curcyl):
-		return
+		exit(1)
 
 	df = pd.DataFrame(columns=['from','to','moved'])
 
+	oreqs = reqs.copy()
+	ocurcyl = curcyl
 	reqs.insert(0, curcyl)
 	reqs.sort()
 
@@ -76,16 +155,18 @@ def SSTF(ncyls, curcyl, reqs, lastcyl=0):
 
 
 	print('\nSSTF scheduling:')
+	cfprint(ncyls, ocurcyl, oreqs, lastcyl, sorted=True)
 	print(df)
 	total = df['moved'].sum()
 	print("Total movements: ", total)
 
 def SCAN(ncyls, curcyl, reqs, lastcyl=0):
 	if not tidyinput(ncyls, lastcyl, reqs, curcyl):
-		return
+		exit(1)
 
 	df = pd.DataFrame(columns=['from','to','moved'])
 
+	oreqs = reqs.copy()
 	reqs.insert(0, curcyl)
 	reqs.sort()
 
@@ -137,16 +218,18 @@ def SCAN(ncyls, curcyl, reqs, lastcyl=0):
 				i += 1
 
 	print('\nSCAN scheduling:')
+	cfprint(ncyls, curcyl, oreqs, lastcyl, sorted=True)
 	print(df)
 	total = df['moved'].sum()
 	print("Total movements: ", total)
 
 def CSCAN(ncyls, curcyl, reqs, lastcyl=0, dirmatter=0):
 	if not tidyinput(ncyls, lastcyl, reqs, curcyl):
-		return
+		exit(1)
 
 	df = pd.DataFrame(columns=['from','to','moved'])
 
+	oreqs = reqs.copy()
 	reqs.insert(0, curcyl)
 	reqs.sort()
 
@@ -193,16 +276,18 @@ def CSCAN(ncyls, curcyl, reqs, lastcyl=0, dirmatter=0):
 			i += 1
 
 	print('\nCSCAN scheduling:')
+	cfprint(ncyls, curcyl, oreqs, lastcyl, sorted=True)
 	print(df)
 	total = df['moved'].sum()
 	print("Total movements: ", total)
 
 def LOOK(ncyls, curcyl, reqs, lastcyl=0):
 	if not tidyinput(ncyls, lastcyl, reqs, curcyl):
-		return
+		exit(1)
 
 	df = pd.DataFrame(columns=['from','to','moved'])
 
+	oreqs = reqs.copy()
 	reqs.insert(0, curcyl)
 	reqs.sort()
 
@@ -247,16 +332,18 @@ def LOOK(ncyls, curcyl, reqs, lastcyl=0):
 				i += 1
 
 	print('\nLOOK scheduling:')
+	cfprint(ncyls, curcyl, oreqs, lastcyl, sorted=True)
 	print(df)
 	total = df['moved'].sum()
 	print("Total movements: ", total)
 
 def CLOOK(ncyls, curcyl, reqs, lastcyl=0, dirmatter=0):
 	if not tidyinput(ncyls, lastcyl, reqs, curcyl):
-		return
+		exit(1)
 
 	df = pd.DataFrame(columns=['from','to','moved'])
 
+	oreqs = reqs.copy()
 	reqs.insert(0, curcyl)
 	reqs.sort()
 
@@ -292,6 +379,7 @@ def CLOOK(ncyls, curcyl, reqs, lastcyl=0, dirmatter=0):
 			i += 1		
 
 	print('\nCLOOK scheduling:')
+	cfprint(ncyls, curcyl, oreqs, lastcyl, sorted=True)
 	print(df)
 	total = df['moved'].sum()
 	print("Total movements: ", total)
@@ -310,7 +398,7 @@ if __name__ == '__main__':
 		reqs = list(map(int, sys.argv[si+1:]))
 	else:
 		ncyls = int(input('Enter the total number of cylinders:'))
-		curcyl = int(input('Enter the total current cylinder number where the header sits:'))
+		curcyl = int(input('Enter the current cylinder number where the header sits:'))
 		reqs = [int(x) for x in input('Enter the sequence of I/O requests, separate by blanks:\n').split()]
 
 	FCFS(ncyls, curcyl, reqs.copy())
@@ -318,11 +406,18 @@ if __name__ == '__main__':
 	CSCAN(ncyls, curcyl, reqs.copy())
 	CLOOK(ncyls, curcyl, reqs.copy())
 	lastcyl = int(input('\nSCAN: Enter the last cylinder number where the header located:'))
+	if lastcyl in reqs:
+		print("Invalid input, input again\n")
+		exit(1)
+
 	SCAN(ncyls, curcyl, reqs.copy(), lastcyl)
 	CSCAN(ncyls, curcyl, reqs.copy(), lastcyl, dirmatter=1)
 	LOOK(ncyls, curcyl, reqs.copy(), lastcyl)
 	CLOOK(ncyls, curcyl, reqs.copy(), lastcyl, dirmatter=1)
 	lastcyl = int(input('\nSCAN: Enter the last cylinder number where the header located:'))
+	if lastcyl in reqs:
+		print("Invalid input, input again\n")
+		exit(1)
 	SCAN(ncyls, curcyl, reqs.copy(), lastcyl)
 	CSCAN(ncyls, curcyl, reqs.copy(), lastcyl, dirmatter=1)
 	LOOK(ncyls, curcyl, reqs.copy(),lastcyl)
