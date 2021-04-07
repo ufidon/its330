@@ -31,7 +31,21 @@ In this lab,  investigate popular file system FAT/FAT32/NTFS/ext4/minix on Windo
 ### 3. Review questions (40%)
 1. (10%) Describe indexed allocation of disk space. Refer to [Allocation](https://en.wikibooks.org/wiki/Operating_System_Design/File_Systems/Allocation), or [OSC9e: Chapter 12](https://www.os-book.com/OS9/slide-dir/index.html), or [OSC10e: Chapter 14](https://www.os-book.com/OS10/slide-dir/index.html).
 2. (20%) Consider a file system that uses inodes to represent files. Disk blocks are 8 KB in size, and a pointer to a disk block requires 4 bytes.  This file system has 12 direct disk blocks, as well as single, double, and triple indirect disk blocks. What is the maximum size of a file that can be stored in this file system? Refer to [OSC9e: Chapter 12](https://www.os-book.com/OS9/slide-dir/index.html), or [OSC10e: Chapter 14](https://www.os-book.com/OS10/slide-dir/index.html). 
+
+    Hint: max file size = # of direct disk blocks * block size + 
+                          (block size / pointer size) * block size + 
+                          (block size / pointer size)^2 * block size + 
+                          (block size / pointer size)^3 * block size
+
+
 3. (10%) How many MB does a 1-TB disk with 4-KB blocks require to store its bit map? Refer to [OSC10e: Chapter 14](https://www.os-book.com/OS10/slide-dir/index.html)
+
+   Hint: bit map size = disk size / block size.  Pay attention to the unit.
+
+
+**Demo video**
+
+* [Lab10: File system investigation](https://youtu.be/_ePWoFQU83k)
 
 ## References
 * _Windows_
