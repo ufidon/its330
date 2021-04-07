@@ -141,7 +141,7 @@ def SCAN(ncyls, curcyl, reqs, lastcyl=0):
 	total = df['moved'].sum()
 	print("Total movements: ", total)
 
-def CSCAN(ncyls, curcyl, reqs, lastcyl=0):
+def CSCAN(ncyls, curcyl, reqs, lastcyl=0, dirmatter=0):
 	if not tidyinput(ncyls, lastcyl, reqs, curcyl):
 		return
 
@@ -150,29 +150,45 @@ def CSCAN(ncyls, curcyl, reqs, lastcyl=0):
 	reqs.insert(0, curcyl)
 	reqs.sort()
 
+	toright = False if dirmatter and lastcyl > curcyl else True
+
 	ci = reqs.index(curcyl)
 	nreqs = len(reqs)
 
-	if ci == 0:
-		i = ci
-		while i < nreqs-1:
-			df.loc[len(df.index)] = [reqs[i], reqs[i+1], np.abs(reqs[i+1]-reqs[i])]
-			i += 1
-	else:
-		if reqs[-1] < ncyls-1:
-			reqs.append(ncyls-1)
-			nreqs += 1
-		i = ci
-		while i < nreqs-1:
-			df.loc[len(df.index)] = [reqs[i], reqs[i+1], np.abs(reqs[i+1]-reqs[i])]
-			i += 1
-		if reqs[0] > 0:
-			df.loc[len(df.index)] = [reqs[i], 0, np.abs(reqs[i])]
-			reqs.insert(0, 0)
-			ci += 1
+	if toright:
+		if ci == 0:
+			i = ci
+			while i < nreqs-1:
+				df.loc[len(df.index)] = [reqs[i], reqs[i+1], np.abs(reqs[i+1]-reqs[i])]
+				i += 1
+		else:
+			if reqs[-1] < ncyls-1:
+				reqs.append(ncyls-1)
+				nreqs += 1
+			i = ci
+			while i < nreqs-1:
+				df.loc[len(df.index)] = [reqs[i], reqs[i+1], np.abs(reqs[i+1]-reqs[i])]
+				i += 1
 
+			df.loc[len(df.index)] = [reqs[i], 0, np.abs(0 - reqs[i])]
+
+			if reqs[0] > 0:
+				df.loc[len(df.index)] = [reqs[i], 0, np.abs(reqs[i])]
+				reqs.insert(0, 0)
+				ci += 1
+
+			i = 0
+			while i<ci-1:
+				df.loc[len(df.index)] = [reqs[i], reqs[i+1], np.abs(reqs[i+1]-reqs[i])]
+				i += 1
+	else: # to left
+		if ci > 0:
+			df.loc[len(df.index)] = [reqs[ci], 0, np.abs(0-reqs[ci])]
+			if reqs[0] > 0:				
+				reqs.insert(0, 0)
+				nreqs += 1
 		i = 0
-		while i<ci-1:
+		while i < nreqs-1:
 			df.loc[len(df.index)] = [reqs[i], reqs[i+1], np.abs(reqs[i+1]-reqs[i])]
 			i += 1
 
@@ -235,7 +251,7 @@ def LOOK(ncyls, curcyl, reqs, lastcyl=0):
 	total = df['moved'].sum()
 	print("Total movements: ", total)
 
-def CLOOK(ncyls, curcyl, reqs, lastcyl=0):
+def CLOOK(ncyls, curcyl, reqs, lastcyl=0, dirmatter=0):
 	if not tidyinput(ncyls, lastcyl, reqs, curcyl):
 		return
 
@@ -244,26 +260,36 @@ def CLOOK(ncyls, curcyl, reqs, lastcyl=0):
 	reqs.insert(0, curcyl)
 	reqs.sort()
 
+	toright = False if dirmatter and lastcyl > curcyl else True
+
 	ci = reqs.index(curcyl)
 	nreqs = len(reqs)
 
-	if ci == 0:
-		i = ci
-		while i < nreqs-1:
-			df.loc[len(df.index)] = [reqs[i], reqs[i+1], np.abs(reqs[i+1]-reqs[i])]
-			i += 1
-	else:
-		i = ci
-		while i < nreqs-1:
-			df.loc[len(df.index)] = [reqs[i], reqs[i+1], np.abs(reqs[i+1]-reqs[i])]
-			i += 1
+	if toright:
+		if ci == 0:
+			i = ci
+			while i < nreqs-1:
+				df.loc[len(df.index)] = [reqs[i], reqs[i+1], np.abs(reqs[i+1]-reqs[i])]
+				i += 1
+		else:
+			i = ci
+			while i < nreqs-1:
+				df.loc[len(df.index)] = [reqs[i], reqs[i+1], np.abs(reqs[i+1]-reqs[i])]
+				i += 1
 
-		df.loc[len(df.index)] = [reqs[i], reqs[0], np.abs(reqs[i]-reqs[0])]
+			df.loc[len(df.index)] = [reqs[i], reqs[0], np.abs(reqs[i]-reqs[0])]
 
+			i = 0
+			while i<ci-1:
+				df.loc[len(df.index)] = [reqs[i], reqs[i+1], np.abs(reqs[i+1]-reqs[i])]
+				i += 1
+	else: # to left
+		if ci > 0:
+			df.loc[len(df.index)] = [reqs[ci], reqs[0], np.abs(reqs[0]-reqs[ci])]
 		i = 0
-		while i<ci-1:
+		while i < nreqs-1:
 			df.loc[len(df.index)] = [reqs[i], reqs[i+1], np.abs(reqs[i+1]-reqs[i])]
-			i += 1
+			i += 1		
 
 	print('\nCLOOK scheduling:')
 	print(df)
@@ -293,8 +319,12 @@ if __name__ == '__main__':
 	CLOOK(ncyls, curcyl, reqs.copy())
 	lastcyl = int(input('\nSCAN: Enter the last cylinder number where the header located:'))
 	SCAN(ncyls, curcyl, reqs.copy(), lastcyl)
+	CSCAN(ncyls, curcyl, reqs.copy(), lastcyl, dirmatter=1)
 	LOOK(ncyls, curcyl, reqs.copy(), lastcyl)
+	CLOOK(ncyls, curcyl, reqs.copy(), lastcyl, dirmatter=1)
 	lastcyl = int(input('\nSCAN: Enter the last cylinder number where the header located:'))
 	SCAN(ncyls, curcyl, reqs.copy(), lastcyl)
+	CSCAN(ncyls, curcyl, reqs.copy(), lastcyl, dirmatter=1)
 	LOOK(ncyls, curcyl, reqs.copy(),lastcyl)
+	CLOOK(ncyls, curcyl, reqs.copy(), lastcyl, dirmatter=1)
 

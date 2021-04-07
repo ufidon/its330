@@ -45,23 +45,23 @@ public class HMACSHA256Gen
 
             if (!File.Exists(dataFile))
             {
-                Console.WriteLine("No data file provided, one will be generated for you.\n");
+                Console.WriteLine("1. No data file provided, one will be generated for you.\n");
                 // Create a file to write to.
                 using (StreamWriter sw = File.CreateText(dataFile))
                 {
-                    string content = "Here is a message to sign";
+                    string content = "2. Here is a message to sign";
                     sw.WriteLine(content);
-                    Console.WriteLine("The content in the generated data file {0} is:\n\n{1}\n", dataFile, content);
+                    Console.WriteLine("2. The content in the generated data file {0} is:\n\n{1}\n", dataFile, content);
                 }
-                Console.WriteLine("The hash file for the data file {0} is {1}\n", dataFile, hashFile);
+                Console.WriteLine("2. The hash file for the data file {0} is {1}\n", dataFile, hashFile);
             }
         }
         else
         {
             dataFile = Fileargs[0];
-            Console.WriteLine("The file to be digested: {0}", dataFile);
+            Console.WriteLine("1. The file to be digested: {0}", dataFile);
             hashFile = dataFile+".sha";
-            Console.WriteLine("File {0} saves the HMACSHA256 hash of file {1}", hashFile, dataFile);
+            Console.WriteLine("2. File {0} saves the HMACSHA256 hash of file {1}", hashFile, dataFile);
         }
         try
         {
@@ -73,23 +73,23 @@ public class HMACSHA256Gen
             {
                 // The array is now filled with cryptographically strong random bytes.
                 rng.GetBytes(secretkey);
-                Console.WriteLine("The key for the HMAC-SHA256:");
+                Console.WriteLine("3. The key for the HMAC-SHA256:");
                 showinhex(secretkey, secretkey.Length);
 
                 // Use the secret key to sign the message file.
-                Console.WriteLine("Hashing file {0} with HMAC-SHA256...", dataFile);
+                Console.WriteLine("4. Hashing file {0} with HMAC-SHA256...", dataFile);
                 HashFile(secretkey, dataFile, hashFile);
 
-                Console.WriteLine("The HMAC-SHA256 hash of {0} is saved in {1} together with its origninal content.\n\n", dataFile, hashFile);
+                Console.WriteLine("5. The HMAC-SHA256 hash of {0} is saved in {1} together with its origninal content.\n\n", dataFile, hashFile);
                 // Verify the signed file
 
-                Console.WriteLine("Verifying the HMAC-SHA256 hash in {0} against {1}...", hashFile, dataFile);
+                Console.WriteLine("6. Verifying the HMAC-SHA256 hash in {0} against {1}...", hashFile, dataFile);
                 VerifyFile(secretkey, hashFile);
             }
         }
         catch (IOException e)
         {
-            Console.WriteLine("Error: File not found", e);
+            Console.WriteLine("2. Error: File not found", e);
         }
     }  //end main
     // Computes a keyed hash for a source file and creates a target file with the keyed hash
@@ -106,7 +106,7 @@ public class HMACSHA256Gen
                     // Compute the hash of the input file.
                     byte[] hashValue = hmac.ComputeHash(inStream);
 
-                    Console.WriteLine("The HMAC-SHA256 hash of file {0}:", sourceFile);
+                    Console.WriteLine("5. The HMAC-SHA256 hash of file {0}:", sourceFile);
                     showinhex(hashValue, hashValue.Length);
 
                     // Reset inStream to the beginning of the file.
@@ -144,13 +144,13 @@ public class HMACSHA256Gen
             {
                 // Read in the storedHash.
                 inStream.Read(storedHash, 0, storedHash.Length);
-                Console.WriteLine("The stored HMAC-SHA256 hash is:");
+                Console.WriteLine("6. The stored HMAC-SHA256 hash is:");
                 showinhex(storedHash, storedHash.Length);
                 // Compute the hash of the remaining contents of the file.
                 // The stream is properly positioned at the beginning of the content, 
                 // immediately after the stored hash value.
                 byte[] computedHash = hmac.ComputeHash(inStream);
-                Console.WriteLine("The computed HMAC-SHA256 hash is:");
+                Console.WriteLine("6. The computed HMAC-SHA256 hash is:");
                 showinhex(computedHash, computedHash.Length);
                 // compare the computed hash with the stored value
 
@@ -165,12 +165,12 @@ public class HMACSHA256Gen
         }
         if (err)
         {
-            Console.WriteLine("Hash values differ! Hashed file has been tampered with!");
+            Console.WriteLine("6. Hash values differ! Hashed file has been tampered with!");
             return false;
         }
         else
         {
-            Console.WriteLine("Hash values agree -- no tampering occurred.");
+            Console.WriteLine("6. Hash values agree -- no tampering occurred.");
             return true;
         }
     } //end VerifyFile

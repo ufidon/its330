@@ -69,30 +69,30 @@ void __cdecl wmain(
         PBYTE rgbMsg = (PBYTE)wargv[1];
 
         //open an algorithm handle
-        wprintf(L"open a hash algorithm handle\n");
+        wprintf(L"1. open a hash algorithm handle\n");
         if(!NT_SUCCESS(status = BCryptOpenAlgorithmProvider(
                                                     &hHashAlg,
                                                     BCRYPT_SHA1_ALGORITHM,
                                                     NULL,
                                                     0)))
         {
-            wprintf(L"**** Error 0x%x returned by BCryptOpenAlgorithmProvider\n", status);
+            wprintf(L"1. **** Error 0x%x returned by BCryptOpenAlgorithmProvider\n", status);
             goto Cleanup;
         }
 
-        wprintf(L"open a signing algorithm handle\n");
+        wprintf(L"2. open a signing algorithm handle\n");
         if(!NT_SUCCESS(status = BCryptOpenAlgorithmProvider(
                                                     &hSignAlg,
                                                     BCRYPT_ECDSA_P256_ALGORITHM,
                                                     NULL,
                                                     0)))
         {
-            wprintf(L"**** Error 0x%x returned by BCryptOpenAlgorithmProvider\n", status);
+            wprintf(L"2. **** Error 0x%x returned by BCryptOpenAlgorithmProvider\n", status);
             goto Cleanup;
         }
 
         //calculate the size of the buffer to hold the hash object
-        wprintf(L"calculate the size of the buffer to hold the hash object\n");
+        wprintf(L"3. calculate the size of the buffer to hold the hash object\n");
         if(!NT_SUCCESS(status = BCryptGetProperty(
                                             hHashAlg, 
                                             BCRYPT_OBJECT_LENGTH, 
@@ -101,21 +101,21 @@ void __cdecl wmain(
                                             &cbData, 
                                             0)))
         {
-            wprintf(L"**** Error 0x%x returned by BCryptGetProperty\n", status);
+            wprintf(L"3. **** Error 0x%x returned by BCryptGetProperty\n", status);
             goto Cleanup;
         }
 
         //allocate the hash object on the heap
-        wprintf(L"allocate the hash object on the heap\n");
+        wprintf(L"4. allocate the hash object on the heap\n");
         pbHashObject = (PBYTE)HeapAlloc (GetProcessHeap (), 0, cbHashObject);
         if(NULL == pbHashObject)
         {
-            wprintf(L"**** memory allocation failed\n");
+            wprintf(L"4. **** memory allocation failed\n");
             goto Cleanup;
         }
 
         //calculate the length of the hash
-        wprintf(L"calculate the length of the hash\n");
+        wprintf(L"5. calculate the length of the hash\n");
         if(!NT_SUCCESS(status = BCryptGetProperty(
                                             hHashAlg, 
                                             BCRYPT_HASH_LENGTH, 
@@ -124,21 +124,21 @@ void __cdecl wmain(
                                             &cbData, 
                                             0)))
         {
-            wprintf(L"**** Error 0x%x returned by BCryptGetProperty\n", status);
+            wprintf(L"5. **** Error 0x%x returned by BCryptGetProperty\n", status);
             goto Cleanup;
         }
 
         //allocate the hash buffer on the heap
-        wprintf(L"allocate the hash buffer on the heap\n");
+        wprintf(L"6. allocate the hash buffer on the heap\n");
         pbHash = (PBYTE)HeapAlloc (GetProcessHeap (), 0, cbHash);
         if(NULL == pbHash)
         {
-            wprintf(L"**** memory allocation failed\n");
+            wprintf(L"6. **** memory allocation failed\n");
             goto Cleanup;
         }
 
         //create a hash
-        wprintf(L"create a hash\n");
+        wprintf(L"7. create a hash\n");
         if(!NT_SUCCESS(status = BCryptCreateHash(
                                             hHashAlg, 
                                             &hHash, 
@@ -148,50 +148,50 @@ void __cdecl wmain(
                                             0, 
                                             0)))
         {
-            wprintf(L"**** Error 0x%x returned by BCryptCreateHash\n", status);
+            wprintf(L"7. **** Error 0x%x returned by BCryptCreateHash\n", status);
             goto Cleanup;
         }
         
 
         //hash some data
-        wprintf(L"hash the message:\n %s\n\n", (wchar_t*)rgbMsg);
+        wprintf(L"8. hash the message:\n %s\n\n", (wchar_t*)rgbMsg);
         if(!NT_SUCCESS(status = BCryptHashData(
                                             hHash,
                                             (PBYTE)rgbMsg,
                                             sizeof(rgbMsg),
                                             0)))
         {
-            wprintf(L"**** Error 0x%x returned by BCryptHashData\n", status);
+            wprintf(L"8. **** Error 0x%x returned by BCryptHashData\n", status);
             goto Cleanup;
         }
         
         //close the hash
-        wprintf(L"close the hash\n");
+        wprintf(L"9. close the hash\n");
         if(!NT_SUCCESS(status = BCryptFinishHash(
                                             hHash, 
                                             pbHash, 
                                             cbHash, 
                                             0)))
         {
-            wprintf(L"**** Error 0x%x returned by BCryptFinishHash\n", status);
+            wprintf(L"9. **** Error 0x%x returned by BCryptFinishHash\n", status);
             goto Cleanup;
         }
-        wprintf(L"\nThe generated hash is:\n");
+        wprintf(L"\n10. The generated hash is:\n");
         printbufinhex(pbHash, cbHash);
 
         //open handle to KSP
-        wprintf(L"open handle to KSP: Key Storage Provider\n");
+        wprintf(L"11. open handle to KSP: Key Storage Provider\n");
         if(FAILED(secStatus = NCryptOpenStorageProvider(
                                                     &hProv, 
                                                     MS_KEY_STORAGE_PROVIDER, 
                                                     0)))
         {
-            wprintf(L"**** Error 0x%x returned by NCryptOpenStorageProvider\n", secStatus);
+            wprintf(L"11. **** Error 0x%x returned by NCryptOpenStorageProvider\n", secStatus);
             goto Cleanup;
         }
 
         //create a persisted key
-        wprintf(L"create a persisted key\n");
+        wprintf(L"12. create a persisted key\n");
         if(FAILED(secStatus = NCryptCreatePersistedKey(
                                                     hProv,
                                                     &hKey,
@@ -200,20 +200,20 @@ void __cdecl wmain(
                                                     0,
                                                     0)))
         {
-            wprintf(L"**** Error 0x%x returned by NCryptCreatePersistedKey\n", secStatus);
+            wprintf(L"12. **** Error 0x%x returned by NCryptCreatePersistedKey\n", secStatus);
             goto Cleanup;
         }
 
         //create key on disk
-        wprintf(L"create key on disk\n");
+        wprintf(L"13. create key on disk\n");
         if(FAILED(secStatus = NCryptFinalizeKey(hKey, 0)))
         {
-            wprintf(L"**** Error 0x%x returned by NCryptFinalizeKey\n", secStatus);
+            wprintf(L"13. **** Error 0x%x returned by NCryptFinalizeKey\n", secStatus);
             goto Cleanup;
         }
 
         //sign the hash
-        wprintf(L"sign the hash\n");
+        wprintf(L"14. sign the hash\n");
         if(FAILED(secStatus = NCryptSignHash(
                                         hKey,
                                         NULL,
@@ -224,21 +224,21 @@ void __cdecl wmain(
                                         &cbSignature,
                                         0)))
         {
-            wprintf(L"**** Error 0x%x returned by NCryptSignHash\n", secStatus);
+            wprintf(L"14. **** Error 0x%x returned by NCryptSignHash\n", secStatus);
             goto Cleanup;
         }
 
 
         //allocate the signature buffer
-        wprintf(L"allocate the signature buffer\n");
+        wprintf(L"15. allocate the signature buffer\n");
         pbSignature = (PBYTE)HeapAlloc (GetProcessHeap (), 0, cbSignature);
         if(NULL == pbSignature)
         {
-            wprintf(L"**** memory allocation failed\n");
+            wprintf(L"15. **** memory allocation failed\n");
             goto Cleanup;
         }
 
-        wprintf(L"save the signature in the signature buffer\n");
+        wprintf(L"16. save the signature in the signature buffer\n");
         if(FAILED(secStatus = NCryptSignHash(
                                         hKey,
                                         NULL,
@@ -249,14 +249,14 @@ void __cdecl wmain(
                                         &cbSignature,
                                         0)))
         {
-            wprintf(L"**** Error 0x%x returned by NCryptSignHash\n", secStatus);
+            wprintf(L"16. **** Error 0x%x returned by NCryptSignHash\n", secStatus);
             goto Cleanup;
         }
 
-        wprintf(L"\nThe signature on the hash is:\n");
+        wprintf(L"\n17. The signature on the hash is:\n");
         printbufinhex(pbSignature, cbSignature);
 
-        wprintf(L"export the public key\n");
+        wprintf(L"18. export the public key\n");
         if(FAILED(secStatus = NCryptExportKey(
                                             hKey,
                                             NULL,
@@ -267,19 +267,19 @@ void __cdecl wmain(
                                             &cbBlob,
                                             0)))
         {
-            wprintf(L"**** Error 0x%x returned by NCryptExportKey\n", secStatus);
+            wprintf(L"18. **** Error 0x%x returned by NCryptExportKey\n", secStatus);
             goto Cleanup;
         }
 
-        wprintf(L"allocate the public key buffer\n");
+        wprintf(L"19. allocate the public key buffer\n");
         pbBlob = (PBYTE)HeapAlloc (GetProcessHeap (), 0, cbBlob);
         if(NULL == pbBlob)
         {
-            wprintf(L"**** memory allocation failed\n");
+            wprintf(L"19. **** memory allocation failed\n");
             goto Cleanup;
         }
 
-        wprintf(L"save the public key in the key buffer\n");
+        wprintf(L"20. save the public key in the key buffer\n");
         if(FAILED(secStatus = NCryptExportKey(
                                             hKey,
                                             NULL,
@@ -290,14 +290,14 @@ void __cdecl wmain(
                                             &cbBlob,
                                             0)))
         {
-            wprintf(L"**** Error 0x%x returned by NCryptExportKey\n", secStatus);
+            wprintf(L"20. **** Error 0x%x returned by NCryptExportKey\n", secStatus);
             goto Cleanup;
         }
 
-        wprintf(L"\nThe public key is:\n");
+        wprintf(L"\n21. The public key is:\n");
         printbufinhex(pbBlob, cbBlob);
 
-        wprintf(L"import key pair for signature verification\n");
+        wprintf(L"22. import key pair for signature verification\n");
         if(!NT_SUCCESS(status = BCryptImportKeyPair(
                                                 hSignAlg,
                                                 NULL,
@@ -307,12 +307,12 @@ void __cdecl wmain(
                                                 cbBlob,
                                                 0)))
         {
-            wprintf(L"**** Error 0x%x returned by BCryptImportKeyPair\n", status);
+            wprintf(L"22. **** Error 0x%x returned by BCryptImportKeyPair\n", status);
             goto Cleanup;
         }
 
 
-        wprintf(L"signature verifying...\n");
+        wprintf(L"23. signature verifying...\n");
         if(!NT_SUCCESS(status = BCryptVerifySignature(
                                                 hTmpKey,
                                                 NULL,
@@ -322,11 +322,11 @@ void __cdecl wmain(
                                                 cbSignature,
                                                 0)))
         {
-            wprintf(L"**** Error 0x%x returned by BCryptVerifySignature\n", status);
+            wprintf(L"23. **** Error 0x%x returned by BCryptVerifySignature\n", status);
             goto Cleanup;
         }
 
-        wprintf(L"Succeeded in signature verification!\n");
+        wprintf(L"24. Succeeded in signature verification!\n");
 
     Cleanup:
 
