@@ -7,6 +7,8 @@ Course materials and demos for labs
 
 In this lab,  investigate popular file system FAT/FAT32/NTFS/ext4/minix on Windows using [sleuthkit](https://www.sleuthkit.org/sleuthkit/).
 
+*Please install [7Zip](https://www.7-zip.org/) if you didn't*
+
 ### 2. Tasks (60%)
 
 1. (3%) Download and unarchive [sleuthkit](https://www.sleuthkit.org/sleuthkit/)
