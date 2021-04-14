@@ -1,7 +1,7 @@
 # its330
 Course materials and demos for labs
 
-## Lab11: Networking and I/O programming
+## Lab11: Network and I/O programming
 
 ### 1. Description
 
@@ -17,6 +17,11 @@ In this lab,  practice basic socket-programming in Windows API and C#.
 1. (20%) Read articles [Asynchronous I/O](https://en.wikipedia.org/wiki/Asynchronous_I/O) and [Interrupt](https://en.wikipedia.org/wiki/Interrupt), write a summary about polling(synchronous) I/O vs. interrupt(asynchronous) I/O. You may refer to [OSC9e: Chapter 13](https://www.os-book.com/OS9/slide-dir/index.html), or [OSC10e: Chapter 12](https://www.os-book.com/OS10/slide-dir/index.html) for additional information.
 2. (20%) Read article [Direct memory access (DMA)](https://en.wikipedia.org/wiki/Direct_memory_access), write a summary on the steps in a DMA transfer. You may refer to [OSC9e: Chapter 13](https://www.os-book.com/OS9/slide-dir/index.html), or [OSC10e: Chapter 12](https://www.os-book.com/OS10/slide-dir/index.html) for additional information.
 3. (20%) Describe the life cycle of an I/O request based on the article [Example I/O Request - An Overview](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/example-i-o-request---an-overview). You may refer to [OSC9e: Chapter 13](https://www.os-book.com/OS9/slide-dir/index.html), or [OSC10e: Chapter 12](https://www.os-book.com/OS10/slide-dir/index.html) for additional information.
+
+**Demo video**
+
+* [Lab11 Network programming](https://youtu.be/icQjUYDCefw)
+
 
 ## References
 
