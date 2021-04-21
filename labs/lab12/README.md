@@ -31,6 +31,12 @@ Write a concise summary for each of the following questions.
 8. (6%) Describe the three things user authentication is based on:  OSC9e: Section 15.5 User Authentication. Page 685-689 or OSC10e: Section 16.5 User Authentication. Page 648-653
 9. (8%) Describe the major methods, tools, and techniques that can be used to improve resistance to threats. OSC9e: Section 15.6 Implementing Security Defenses Page 689-696 or OSC10e: Section 16.6 Implementing Security Defenses Page 653-661
 
+
+**Demo video**
+
+* [Lab12 Security and Protection](https://youtu.be/SqA8OXUF8NI)
+
+
 ## References
 
 * _Windows
