@@ -60,10 +60,10 @@ class colornformat:
 
 def tidyinput(ncyls, curcyl, reqs, lastcyl=0):
 	lreqs = reqs.copy()
-	if (len(reqs) > 0 and ncyls > 0 and ncyls > max(reqs) 
+	if (len(lreqs) > 0 and ncyls > 0 and ncyls > max(lreqs) 
 		and lastcyl>=0 and lastcyl < ncyls and curcyl>= 0 
-		and curcyl < ncyls and min(reqs)>= 0 
-		and len(set(reqs)) == len(reqs)):
+		and curcyl < ncyls and min(lreqs)>= 0 
+		and len(set(lreqs)) == len(lreqs)):
 		return True
 	else:
 		print('tidyinput.lreqs: ', reqs)
@@ -256,7 +256,6 @@ def CSCAN(ncyls, curcyl, reqs, lastcyl=0, dirmatter=0):
 			df.loc[len(df.index)] = [reqs[i], 0, np.abs(0 - reqs[i])]
 
 			if reqs[0] > 0:
-				df.loc[len(df.index)] = [reqs[i], 0, np.abs(reqs[i])]
 				reqs.insert(0, 0)
 				ci += 1
 
@@ -267,15 +266,22 @@ def CSCAN(ncyls, curcyl, reqs, lastcyl=0, dirmatter=0):
 	else: # to left
 		if ci > 0:
 			df.loc[len(df.index)] = [reqs[ci], 0, np.abs(0-reqs[ci])]
+			# cannot delete current request since CSCAN does NOT serve requests while moving left
+			# del reqs[ci]
 			if reqs[0] > 0:				
 				reqs.insert(0, 0)
 				nreqs += 1
+				ci += 1 # not needed, for clarification only
 		i = 0
 		while i < nreqs-1:
 			df.loc[len(df.index)] = [reqs[i], reqs[i+1], np.abs(reqs[i+1]-reqs[i])]
 			i += 1
 
 	print('\nCSCAN scheduling:')
+	if dirmatter:
+		print("Initial direction matters\n")
+	else:
+		print("Initial direction does NOT matter\n")	
 	cfprint(ncyls, curcyl, oreqs, lastcyl, sorted=True)
 	print(df)
 	total = df['moved'].sum()
@@ -373,12 +379,19 @@ def CLOOK(ncyls, curcyl, reqs, lastcyl=0, dirmatter=0):
 	else: # to left
 		if ci > 0:
 			df.loc[len(df.index)] = [reqs[ci], reqs[0], np.abs(reqs[0]-reqs[ci])]
+			# cannot delete current request since clook does NOT server while moving left
+			# del reqs[ci]
+			# nreqs -= 1
 		i = 0
 		while i < nreqs-1:
 			df.loc[len(df.index)] = [reqs[i], reqs[i+1], np.abs(reqs[i+1]-reqs[i])]
 			i += 1		
 
 	print('\nCLOOK scheduling:')
+	if dirmatter:
+		print("Initial direction matters\n")
+	else:
+		print("Initial direction does NOT matter\n")
 	cfprint(ncyls, curcyl, oreqs, lastcyl, sorted=True)
 	print(df)
 	total = df['moved'].sum()
@@ -406,18 +419,14 @@ if __name__ == '__main__':
 	CSCAN(ncyls, curcyl, reqs.copy())
 	CLOOK(ncyls, curcyl, reqs.copy())
 	lastcyl = int(input('\nSCAN: Enter the last cylinder number where the header located:'))
-	if lastcyl in reqs:
-		print("Invalid input, input again\n")
-		exit(1)
+
 
 	SCAN(ncyls, curcyl, reqs.copy(), lastcyl)
 	CSCAN(ncyls, curcyl, reqs.copy(), lastcyl, dirmatter=1)
 	LOOK(ncyls, curcyl, reqs.copy(), lastcyl)
 	CLOOK(ncyls, curcyl, reqs.copy(), lastcyl, dirmatter=1)
 	lastcyl = int(input('\nSCAN: Enter the last cylinder number where the header located:'))
-	if lastcyl in reqs:
-		print("Invalid input, input again\n")
-		exit(1)
+
 	SCAN(ncyls, curcyl, reqs.copy(), lastcyl)
 	CSCAN(ncyls, curcyl, reqs.copy(), lastcyl, dirmatter=1)
 	LOOK(ncyls, curcyl, reqs.copy(),lastcyl)
