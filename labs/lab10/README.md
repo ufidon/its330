@@ -42,7 +42,7 @@ In this lab,  investigate popular file system FAT/FAT32/NTFS/ext4/minix on Windo
 
 3. (10%) How many MB does a 1-TB disk with 4-KB blocks require to store its bit map? Refer to [OSC10e: Chapter 14](https://www.os-book.com/OS10/slide-dir/index.html)
 
-   Hint: bit map size = disk size / block size.  Pay attention to the unit.
+   Hint: bit map size (bit) = disk size / block size.  Pay attention to the unit.
 
 
 **Demo video**

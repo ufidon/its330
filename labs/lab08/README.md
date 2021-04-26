@@ -63,6 +63,7 @@ In this lab, practice virtual memory allocation using Windows API and C#.
    Hints:
    * memory A : memory B: memory C = process A : process B : process C
    * memory A + memory B + memory C <= total pages
+   * number of free pages = total pages - memory A - memory B - memory C
 
 5. (10%) Reading and writing
    1. (4%) Read the article [Virtual memory](https://en.wikipedia.org/wiki/Virtual_memory), write a summary about 

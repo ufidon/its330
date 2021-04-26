@@ -27,7 +27,7 @@ In this lab,  practice file operations with file system interfaces below:
 
    given that the disk has 202 cylinders (i.e. the largest cylinder number is 201, since the cylinder number starts from 0) in total and it is currently serving on cylinder 55, 
    1. (18%, each algorithm 3%) Case 1: the previous block served is on cylinder 4. 
-   2. (18%, each algorithm 3%) Case 2: If the previous block served is on cylinder 60, redo the problem.
+   2. (18%, each algorithm 3%) Case 2: If the previous block served is on cylinder 60, redo the problem (Based on the convention in textbook OSC, initial direction only affects SCAN and LOOK).
 4. (5%) Read articles [File attribute](https://en.wikipedia.org/wiki/File_attribute) and [Computer file](https://en.wikipedia.org/wiki/Computer_file), write a summary about file attributes and file operations.
 5. (5%) Read article [File Access Methods in Operating System](https://www.geeksforgeeks.org/file-access-methods-in-operating-system/), write a summary about the difference between the two file accesses: sequential access vs direct access ( or relative access).
 6. (5%) List out five file system operations that are to be executed on a directory. Refer to [OSC9e: Chapter 11](https://www.os-book.com/OS9/slide-dir/index.html) or [OSC10e: Chapter 13](https://www.os-book.com/OS10/slide-dir/index.html).
